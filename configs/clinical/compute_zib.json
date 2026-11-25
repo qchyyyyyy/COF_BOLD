@@ -1,0 +1,19 @@
+{
+  "template_root": "REPLACE_ABSOLUTE_TEMPLATE_ROOT",
+  "rho": 0.0005,
+  "tau": 1e-08,
+  "sigma": 8,
+  "methods": [
+    "OF",
+    "PG",
+    "COF"
+  ],
+  "runs": [
+    {
+      "input_cifti": "REPLACE_ABSOLUTE_SCAN.dtseries.nii",
+      "output_dir": "REPLACE_NEW_ABSOLUTE_EXTERNAL_SCAN_OUTPUT",
+      "tr": 0.8,
+      "kind": "task"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "group_dir": "/external/hcp/wm/group",
+  "behaviour_csv": "/external/hcp/behaviour.csv",
+  "output_file": "/external/derived/behaviour/participants.csv",
+  "historical_input_hashes": "configs/behaviour/historical_input_hashes.json",
+  "expected_n": 1025
+}

@@ -1,0 +1,31 @@
+{
+  "mode": "rfMRI",
+  "raw_rest_root": "/path/to/HCP_3T_Rest_Denoised/Unzip",
+  "output_root": "/path/to/derived/HCP-YA",
+  "spm_root": "/path/to/spm12",
+  "subjects": [
+    "YOUR_SUBJECT_ID"
+  ],
+  "phase_encoding": "LR",
+  "tr": 0.72,
+  "methods": [
+    "COF"
+  ],
+  "sessions": [
+    "REST1"
+  ],
+  "grid": {
+    "x_min": -250,
+    "x_max": 250,
+    "y_min": -200,
+    "y_max": 200,
+    "spacing": 2
+  },
+  "cof": {
+    "rho": 0.0005,
+    "tau": 1e-08,
+    "sigma": 8
+  },
+  "allow_existing_output": false,
+  "template_root": "/path/to/external/templates"
+}

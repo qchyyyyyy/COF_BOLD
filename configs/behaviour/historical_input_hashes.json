@@ -1,0 +1,41 @@
+{
+  "version": "fig4e_historical_verified_2026-11-17",
+  "files": [
+    {
+      "name": "tfMRI_WM_LR_info.mat",
+      "bytes": 745258,
+      "sha256": "f7fcacc5ae5814df07865f52d55c6ca60eced5b95319848d6b9f904c63c1fa03"
+    },
+    {
+      "name": "tfMRI_WM_LR_SubList.mat",
+      "bytes": 4792,
+      "sha256": "eb78a62b2df24d5fcaa7d1f5aad7db99610d1390c2b951f211dd9d6b0e64f01f"
+    },
+    {
+      "name": "tfMRI_WM_LR_numPattern_global_lh_COF.mat",
+      "bytes": 1750703,
+      "sha256": "8e428a609cb418f8029afa5b60e0684b299738769a1aa5fa1338c0dd0d46a444"
+    },
+    {
+      "name": "tfMRI_WM_LR_numPattern_global_rh_COF.mat",
+      "bytes": 1767461,
+      "sha256": "89466fdd300eef642089e5b67fe503fb1a58a6bd19608a853fee9a48556329e4"
+    }
+  ],
+  "source_role": "Exact historical Fig.4e reproduction baseline, not approval of historical statistical assumptions",
+  "verification_jobs": [
+    "9482879",
+    "9482897"
+  ],
+  "expected_subjects": 1025,
+  "expected_groups": [
+    109,
+    67,
+    849
+  ],
+  "group_order": [
+    "left_low_PQ",
+    "near_optimal",
+    "right_high_PQ"
+  ]
+}

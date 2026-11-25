@@ -1,0 +1,13 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.5.5",
+    "scipy": "1.18.1",
+    "pandas": "3.0.1",
+    "h5py": "3.16.0",
+    "nibabel": "5.5.0",
+    "pytest": "9.0.2"
+  },
+  "matlab": "R2025b",
+  "scope": "Final isolated synthetic Python tests; MATLAB checks use separately installed toolboxes."
+}

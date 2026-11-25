@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the associated manuscript."
+title: "Brain-wide reconfiguration of cortical propagation motifs supports human cognition"
+authors:
+  - family-names: "Qian"
+    given-names: "Chengyuan"
+  - family-names: "Ding"
+    given-names: "Weiyang"
+  - family-names: "Chang"
+    given-names: "Xiao"
+  - family-names: "Zhao"
+    given-names: "Yijie"
+  - family-names: "Deco"
+    given-names: "Gustavo"
+  - family-names: "Gong"
+    given-names: "Pulin"
+  - family-names: "Feng"
+    given-names: "Jianfeng"
+type: software
+license: "MIT"
+abstract: "Publication code for cortical velocity-field estimation, propagation-motif analysis, behavioural operating-range analysis, schizophrenia regime analysis and recurrent-neural-network analogues."
+keywords:
+  - cortical travelling waves
+  - complex-valued optical flow
+  - fMRI
+  - propagation motifs
+  - working memory
+  - schizophrenia
+  - recurrent neural networks
+

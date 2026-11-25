@@ -1,0 +1,1086 @@
+{
+  "release": "project01-code-20261125-v2",
+  "date": "2026-11-25",
+  "manuscript": {
+    "Manuscript.docx": {
+      "sha256": "d85cf8bf5438ee9e2b2e96e479bea38662230bb5a8e61c3befd8fba8aa97eafc",
+      "bytes": 21504674
+    },
+    "Supplementary Information.docx": {
+      "sha256": "5dab12b7d1a0ec07746581f6573aab934a38d1b84aa54cb8c779ce1ee35d6069",
+      "bytes": 713569
+    }
+  },
+  "sources": {
+    "core_mapping": [
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/cof/complexOpticalFlow.m",
+        "destination": "matlab/core/flow/cof_solve.m",
+        "source_sha256": "180f10657d6d3b615e544ca45fed6f9383065770e3267e63bc08d08bc0d70ef1",
+        "destination_sha256": "d8c6e2ffa3e1ba436378d033112ca22a494dcdfd96654b84a22840046ac00c63"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/cof/extract_velocity_field.m",
+        "destination": "matlab/core/flow/estimate_velocity.m",
+        "source_sha256": "49222ac090a31117691bb8befdac464cd9923bca79b33845bba45eefb2a86f11",
+        "destination_sha256": "963b29ce288613be57b08d8e4ab8d7e1488a5431be21bfcda25352c21ea05863"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/cof/harmonic_extend_masked_movie.m",
+        "destination": "matlab/core/flow/extend_masked_movie.m",
+        "source_sha256": "6cfa6f61dfc3c33e87ff4609eca31c8512d36cb1bbadd4f5da576ca0fa3848bc",
+        "destination_sha256": "13f2611173329922f089bb85ac4ecb9c708f9063a7f53e92c0c69353057f4e50"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/cof/opticalFlow.m",
+        "destination": "matlab/core/flow/of_solve.m",
+        "source_sha256": "693dcf9106ef14e67a5eccf44a56be6f7fec96e1c245d474913f1904cc88f226",
+        "destination_sha256": "2d488e6fe46d288f963fb6a8a1f2fa706a6d68a6618d0fc2596ba5b3a850f521"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/cof/phaseGradient.m",
+        "destination": "matlab/core/flow/phase_gradient.m",
+        "source_sha256": "dce4d9184333a800cdee581a019aa465691f67c18b0b866036afb6149f3d02e6",
+        "destination_sha256": "86bb7ffac6d068f98bb7a9d29f27fae3ee72512fd44e96fab3803a9e4170b7eb"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/motifs/calc_DivCurl.m",
+        "destination": "matlab/core/features/velocity_derivatives.m",
+        "source_sha256": "bb58086de64349806a58a246aba6ceb7242b0f4f161ded9a1092efdcce097422",
+        "destination_sha256": "3321e367fb3db1607ec5550ce8a1ec771f0b8b4626a8f930b4901050f6db10d1"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/motifs/patternNum.m",
+        "destination": "matlab/core/features/count_motifs.m",
+        "source_sha256": "0286d5018c4e572771f5177aea59c1a576a1b785bb3164b5286069db0a43651f",
+        "destination_sha256": "c5f7ab4e485c8926cfebad40521472d59cb7b46a704bd3720bb5b6b4b80cc439"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/motifs/patternSize.m",
+        "destination": "matlab/core/features/measure_motif_sizes.m",
+        "source_sha256": "bc7b4992f9f408e7bdf025473ea10333607d0f4fe9f583fa666d6ba82a171e59",
+        "destination_sha256": "1bc779ae5b5ae568ce78ff7dead049d724f70bacec8086524a5da2a940422798"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/motifs/track_patterns.m",
+        "destination": "matlab/core/features/track_motifs.m",
+        "source_sha256": "fede798cc67bdd035cbf5e1cf225a6d7fb3d383e0f03508ff62ec0f57d861759",
+        "destination_sha256": "a6555d901f337504c228dfc838a9c37bf937a0b0a79f64dc61507345e93b666f"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/preprocessing/generate_surrogate.m",
+        "destination": "matlab/core/preprocessing/generate_surrogate.m",
+        "source_sha256": "b200804ceaf63e7c9508709f862e98becf860ac4b825fd5be21e98417885807c",
+        "destination_sha256": "fb607b4f3a75a10da98558df660ec34ecb5f5e2388248cc1a030cd0b385b0c5c"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/preprocessing/preproc_2D.m",
+        "destination": "matlab/core/preprocessing/preprocess_rest.m",
+        "source_sha256": "170e35cb50094ca2850fb788f557f86fac298321135c4b6e032599e7f4ac36a7",
+        "destination_sha256": "ad39af8052255bc3df2cc7bddff2de6ce6a5a8cebf93445ddaebc5c02e5839d3"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/preprocessing/preproc_2D_surrogate.m",
+        "destination": "matlab/core/preprocessing/preprocess_surrogate.m",
+        "source_sha256": "bd13d4f72f9eb6a06eb2a537e680995d0b41f842da9206ace20b8cb84b33b5ca",
+        "destination_sha256": "b1f837cb3ba756e5e398acb028be04974d57918b6be4760a7a19a96e571f59ff"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/preprocessing/preproc_2D_tfMRI.m",
+        "destination": "matlab/core/preprocessing/preprocess_task.m",
+        "source_sha256": "e7cb72077fdbe6710ce87ce1215f224ca6b27cf47d978f52109952da12d45e20",
+        "destination_sha256": "783a4802a9dc5388dd259b257c21a1e418f2cf18bba8ff765400a84b38b0532b"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/statistics/bwas_GLM.m",
+        "destination": "matlab/core/statistics/fit_vertex_glm.m",
+        "source_sha256": "87508b5b6d139e5dca51e0bf330630465998d5d4d34bb810bbc5b440c638ceb0",
+        "destination_sha256": "9d1bc386b09ae7f950ebcae0c1efe63cb65fe540e4fba339c901ff114d89a9dd"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/statistics/circular_shift_test.m",
+        "destination": "matlab/core/statistics/circular_shift_test.m",
+        "source_sha256": "1a76c70800ea8d371ae58e3fd9bb863ab8fa5c41c1ea417798faff02cae18e09",
+        "destination_sha256": "5a191306d81b689c0ec30430d9d350878a15a8ef0319728a4135158e39a60d11"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/statistics/cluster_perm_1d.m",
+        "destination": "matlab/core/statistics/cluster_permutation_test.m",
+        "source_sha256": "10a09c3fec8c39d5d0d3b97a2392342efdabd6df8f01f9abf2e9eda7c353a37a",
+        "destination_sha256": "93d2c1c98f43af0b4674ec9dadb7ab66c7a06c3e46317ef98a28ef40cc3bead0"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/statistics/FDR_correction.m",
+        "destination": "matlab/core/statistics/adjust_fdr.m",
+        "source_sha256": "4c8c6130ced6a9b2e9bcf5a62af673dfc2c0f45c8c5fa6356bc7628f80cf4504",
+        "destination_sha256": "e29279a36dce54372d1001e2606a9c9657ba0386f08d39b2d1c2840f914b9e7d"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/statistics/gls_ar1.m",
+        "destination": "matlab/core/statistics/fit_gls_ar1.m",
+        "source_sha256": "a0a2d4b6364971c4a780ed9997e4dbf5262d30e689ac51c2c5ad3ad63014c342",
+        "destination_sha256": "88f464df23f80a586e4eabec17e023ef63ec5820853a25e8f871c83db745d804"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/statistics/perm_ks_test_ind.m",
+        "destination": "matlab/core/statistics/permutation_ks_test.m",
+        "source_sha256": "fc7e4d49469886b35925b009c9ed7e7d0fd201012f37d52ce111f39c3d3b644f",
+        "destination_sha256": "4a2bd1444908ad6e1c303e0d67503064bcdb4a6a2d08b197b52835f041f0ce07"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/statistics/perm_test_ind.m",
+        "destination": "matlab/core/statistics/permutation_mean_test.m",
+        "source_sha256": "f0d94c3cf2a3b49191d7885b6625d9db82dd0cdd5a6ac519e83b9701835e5e11",
+        "destination_sha256": "1f67ab192ae791c09b877f511eff90915464c52c07bcef6720fd619e14d5cb1c"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/utils/cof_template_path.m",
+        "destination": "matlab/core/io/template_path.m",
+        "source_sha256": "09e676be3884e4512e359a642634c2b5188874e3e59d781c41078bdaed107f0c",
+        "destination_sha256": "78d62bae7a75f124171eb6658874437ca622bee33f305731209ba08e859067a7"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/utils/map2vec.m",
+        "destination": "matlab/core/geometry/grid_to_vector.m",
+        "source_sha256": "2dc18edbda904b2233fa67a1174f8d517697f77ad2ae2de09506c2c8b29ff693",
+        "destination_sha256": "26f566c7a909e9a854b772a2a55802977c1f4a9cd29e83cca6b9e2acbfe6182e"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/utils/masklabel.m",
+        "destination": "matlab/core/geometry/load_cortical_atlas.m",
+        "source_sha256": "21463f678f1dfbd05e0a9d2a976e9f9abe89727d53e3a6745ebc06fbf86b928d",
+        "destination_sha256": "6c23f0e8c52549169bbb2b3aac015589acc046d241d153d63f70708f8b5de4cc"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/utils/recon_velfield.m",
+        "destination": "matlab/core/geometry/reconstruct_velocity.m",
+        "source_sha256": "53a9989d5e1b40b676c75a4f9b46d58060d14d31e681ef5946ccad32bdf05c67",
+        "destination_sha256": "b3a2df1c3090795d4b69413e03c4ccc37710ba50c94fc7ea3089ded2370cf1a7"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/utils/reorder_subject_blocks.m",
+        "destination": "matlab/core/geometry/reorder_participant_blocks.m",
+        "source_sha256": "eca2a91dad4a0b921edf9d472c61d597faaa2494202b7bcd627ef60a3c262db5",
+        "destination_sha256": "7c35e248307d99e94aa92826a3fd05567033feb92693a168f81656916ec027b4"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/utils/save_render_job.m",
+        "destination": "matlab/core/io/write_plot_data.m",
+        "source_sha256": "ba56ec413d2d133ccec1ce3b0b5e65fe79d0c57308eee3017a82268e4d9f5008",
+        "destination_sha256": "27e4d7b4d2143576bf3969a12ad72436e3bbaf4306e6bad1120a0b75d0ac41fd"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/utils/tc2mesh.m",
+        "destination": "matlab/core/geometry/interpolate_to_grid.m",
+        "source_sha256": "f4370242d9f6914f52d498d30f8986b581d303c1c32d42f6eedefb0f9f25c910",
+        "destination_sha256": "3ff7c46ed4bf6fcada9e39862fc240cf785a38e8a76d325c8991a7b53fca16a9"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/utils/vec2map.m",
+        "destination": "matlab/core/geometry/vector_to_grid.m",
+        "source_sha256": "04c60e60bdeb6be37bf116f7667ef52c55ec99251357b42a836d6b70f1cbc580",
+        "destination_sha256": "c9377774766007eba317ed5930f75c9d37dd1e395db4ff2537c08eb42d5081da"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/src/matlab/utils/wrap_angle_difference.m",
+        "destination": "matlab/core/geometry/wrap_angle_difference.m",
+        "source_sha256": "b07b0d8d54886ab8881e78c10abb6310dce1d1553a568cad94c68c9e8eaedd85",
+        "destination_sha256": "a8d5c72a0a6bc54ce98a31da949adaa509764fc4419151712fc7bdaba80a00a9"
+      }
+    ],
+    "clinical_mapping": [
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/pipelines/fig4_scz_regimes/fig5_collect_historical_cohort.m",
+        "destination": "matlab/workflows/clinical/clinical_collect_cohort.m",
+        "source_sha256": "b0b8f3a4c398262affbfc3d8ad07f146e4c18c18fa09837cf00ff123d7afa43b",
+        "changes": "Explicit exclusions, shape/ID/covariate checks, no silent fallback or plotting code.",
+        "destination_sha256": "187221042659c233e9e66746994be38aef05c4acd7d74de5f0ea596b78ceb5fc"
+      }
+    ],
+    "compute_source_map": [
+      {
+        "source": "pipelines/fig1_cof_validation/pipeline_HCP_3T_fMRI/calc_vvf_HCP_YA_surrogate_from_preprocessed.m",
+        "source_sha256": "297d134d16da44206097063ee4d6c27af1ce14e5845a5f4809fdd7898d91b8b3",
+        "destination": "matlab/workflows/rest/rest_surrogate_velocity.m",
+        "destination_sha256": "9197856a7948ee7ba92bc63e91bb2af116a1a6a318e1e202347e0a92f1d092d9",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig1_cof_validation/pipeline_HCP_3T_fMRI/stat_vvf_HCP_YA.m",
+        "source_sha256": "d22cddd785e735cff05f4e2c90cea0815f7857a82ec645ca91e01929272f1d1a",
+        "destination": "matlab/workflows/rest/rest_motif_metrics.m",
+        "destination_sha256": "ce52dd7cd550ac784ca28f17d72eaf3a073583eec064cdcaa7116c915594d4bc",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig1_cof_validation/pipeline_HCP_3T_fMRI/stat_surrogate_motifs_HCP_YA.m",
+        "source_sha256": "28972fd5d91b4659fa4e98668eb652d7e4ae62cb25505e15fd003230ec79a341",
+        "destination": "matlab/workflows/rest/rest_surrogate_metrics.m",
+        "destination_sha256": "ead96008d7ee4c54a24cd0b1c12aab035e465379bfc663ea41074cdea364e984",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig1_cof_validation/pipeline_HCP_3T_fMRI/fig1_hcp3t_config.m",
+        "source_sha256": "a7f62340e916174ef46a870ba8d1480968aa19386ee558bd94713f0ef3948894",
+        "destination": "matlab/workflows/rest/rest_config.m",
+        "destination_sha256": "73ee378c0b8b8400d6959cd4efae38403969ee0fa3774460f7a88cf3e6a12727",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig1_cof_validation/pipeline_HCP_3T_fMRI/fig1e_statistic_patternSP.m",
+        "source_sha256": "09a8466da451dd94fc2a3391a731789193802f238917fe73d2c36e0102741539",
+        "destination": "matlab/workflows/rest/rest_motif_densities.m",
+        "destination_sha256": "17232e3ad7f0b89226a46016aad662ae10feae8d2e0251d59b6a0ede965f0619",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig1_cof_validation/pipeline_HCP_3T_fMRI/fig1f_i_principal_pattern_mode.m",
+        "source_sha256": "eaef4d17b3d19b6af40ea709892a09006bbce36e2d5ec2ff789a7ce4d9b65cc0",
+        "destination": "matlab/workflows/rest/rest_principal_modes.m",
+        "destination_sha256": "93bf056290dc99f0e9e1f168de18bd369aefd929718e7734cd09299f9830f06f",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig1_cof_validation/pipeline_HCP_3T_fMRI/exFig3_diverse_motif_global_states.m",
+        "source_sha256": "9e8593594d8f6c135902a6b964807d33be2c61adb6e470723033962d8e016236",
+        "destination": "matlab/workflows/rest/rest_global_states.m",
+        "destination_sha256": "78021ff4bad42c5569ea1b6144ff092d35f30528576ba7c3481ec261b1f397c5",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig2_task_reconfiguration/compute_hcp_task_metrics.m",
+        "source_sha256": "cefba9dab5cb75a9d915fc0610c8e0e13f16a1809d5bc0753749cb34ab1a0b44",
+        "destination": "matlab/workflows/fmri/fmri_task_metrics.m",
+        "destination_sha256": "bf0e3e7ed75e6268075c1309c4e86b66c1934bf248e9fedb7bda7c2da1bb37f9",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig2_task_reconfiguration/compute_hcp_bold_copes.m",
+        "source_sha256": "1e530f0347bc185961a0c526f3c97ff2700e6ca7d08d56c47f761e2f1c4a156d",
+        "destination": "matlab/workflows/fmri/fmri_bold_copes.m",
+        "destination_sha256": "baffc935ae43de697fb66d7a18873ffec4850429170433dcd94bbcc9a47f7419",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig2_task_reconfiguration/group_tfMRI_EVs_HCP_YA.m",
+        "source_sha256": "8a11faa31e9ed0cbcd49db402e502d603bf4951e21e517f24e629a6d7337280c",
+        "destination": "matlab/workflows/fmri/fmri_task_events.m",
+        "destination_sha256": "ebd0bcf4775742ef758f060aee0a7d495bb703fb5c130c8cc92332dcbbe405ac",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig2_task_reconfiguration/group_tfMRI_EVs_HCP_YA_GAMBLING.m",
+        "source_sha256": "ed2510e1d45446ae7c61c93bcd08331c4111a58439762616dc474b42aa263d52",
+        "destination": "matlab/workflows/fmri/fmri_gambling_events.m",
+        "destination_sha256": "828dd38feb673702f9c32a5c079a069653088fdd986e6487c4e42bf958215bd7",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig2_task_reconfiguration/group_tfMRI_EVs_HCP_Development_GUESSING.m",
+        "source_sha256": "6a7820a6e7ff3d04bf0329b40a0e78f50d4fdd28c14f23bcf01b67ac0b1bf063",
+        "destination": "matlab/workflows/fmri/fmri_development_events.m",
+        "destination_sha256": "a33da8fd46f84403479307c671dea128974613dcd3e4dcc5cad5363eb2c9a590",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig1_cof_validation/pipeline_HCP_3T_fMRI/calc_vvf_HCP_YA.m",
+        "source_sha256": "388c1e1c3c1a6e01e9f16b386ce275c42dff70d444ce0e5b08585491fead5c46",
+        "destination": "matlab/core/preprocessing/preprocess_hcp.m",
+        "destination_sha256": "87311d0952acc419339fcce048e4e8fa26eff1f0453d9cf8741617d2a3925730",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_meg/code/matlab/session_lcmv/complexOpticalFlow.m",
+        "source_sha256": "6902753a09ef3b7298c3d3a773b0097139f1038b9eb82bcbf131344f31dd1ff5",
+        "destination": "matlab/workflows/meg/meg_cof_solve.m",
+        "destination_sha256": "d454665b47fbb21e51a6acc5ab43a44c149b0e990e9f96d6c3aa4d7212e46547",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_meg/code/matlab/motifs/calc_DivCurl.m",
+        "source_sha256": "bb9051c3e8b8dca22b8df654e8819533b5cf95800e0508e70b4ea79e3e83955c",
+        "destination": "matlab/workflows/meg/meg_velocity_derivatives.m",
+        "destination_sha256": "aaa8190f73edc1cd4092749f11e936f3a78ad56ea08539ad0c9a3947201a242f",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_meg/code/matlab/motifs/patternNum.m",
+        "source_sha256": "ce7afe8745eafbd0280039e3f81130e7b3a1fb16049e01f8929d764752a83702",
+        "destination": "matlab/workflows/meg/meg_count_motifs.m",
+        "destination_sha256": "b347103781758768c2ce2003d9226dfb1db5a49acc28d4fea849ba55968bc65c",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_meg/code/matlab/motifs/patternSize.m",
+        "source_sha256": "2ec078f6a31af3118529998a7287d300a36ad8a683f0d412488572937b42083b",
+        "destination": "matlab/workflows/meg/meg_measure_motif_sizes.m",
+        "destination_sha256": "84d88974ab12ad1b6f1e46abe66586a4b08e500c821add4f338fbd6d95f9a18b",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_meg/code/matlab/session_lcmv/meg_subject_manifest.m",
+        "source_sha256": "8c45e9c7c708c4ce4f516253f35a6dba2f35a12bcfbdf89150da7926bda6b945",
+        "destination": "matlab/workflows/meg/meg_subject_manifest.m",
+        "destination_sha256": "6fe2e3173c576369d900546082df4be7d276a0d317c535f38a706921bec1c17c",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_meg/code/matlab/session_lcmv/p04_decode_wrkmem_events.m",
+        "source_sha256": "a473fda267958d74e7febc94889f91b6ec3984676372b7cd9d1a22707d5b6873",
+        "destination": "matlab/workflows/meg/meg_decode_events.m",
+        "destination_sha256": "a7db6cdf532a7414cf2e76418861cada8cf5377030c6e46168bbdc5c541fe23f",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_meg/code/matlab/session_lcmv/p04_load_power_session.m",
+        "source_sha256": "ee7aef0884ae45faea6821839980244f924cbd3213968cc35129ae75942faf4b",
+        "destination": "matlab/workflows/meg/meg_load_power_session.m",
+        "destination_sha256": "1892b4675712b4ce97731aad78bcdb0d1269bbbbb7bdbf063c7c967cdd28a1f0",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_meg/code/matlab/session_lcmv/p04_gls_ar1_segment_stream.m",
+        "source_sha256": "5e13014ce4efe384fc0ba265ffd31992892afc8ebf29f7b08237aad9cac03b98",
+        "destination": "matlab/workflows/meg/meg_fit_streaming_gls.m",
+        "destination_sha256": "be62aaa23d2e1bfdc51cb98ec2615a53ff4dcf44bb01d059841e0576cfc72403",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_meg/code/matlab/session_lcmv/run_p04_divcurl_pattern_metrics.m",
+        "source_sha256": "1c23f66a687c0bdec5b03614c467e0a5f875435417acd1924e2204a30568248b",
+        "destination": "matlab/workflows/meg/meg_native_motif_metrics.m",
+        "destination_sha256": "eed520340e74d942d0de5f1ea7c656a6bbc412a962d7d7485e6ceae1df95165e",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_meg/code/matlab/session_lcmv/run_p04_exp004_subject.m",
+        "source_sha256": "82dbdfbe6d2b2b4f27a3213554167e942f2124fa444f093f7c2cff8c4df6cfbf",
+        "destination": "matlab/workflows/meg/meg_native_conditions.m",
+        "destination_sha256": "360e962fa9e9baf241eb0fbb24daab3eee7b68975a8ceb436cbe3543961eb3df",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_meg/code/matlab/session_lcmv/run_p04_exp004_group_stats.m",
+        "source_sha256": "81915a5f42c534ef9d8af3e5cfdc3f48c3f6ce2a6c0bf56419241ad3ff98c542",
+        "destination": "matlab/workflows/meg/meg_native_group.m",
+        "destination_sha256": "001f80b885f8892f64e4b126a8db955a35f156aca47cf9ba2c62a642980c5caa",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_meg/code/matlab/session_lcmv/run_p04_exp005_subject.m",
+        "source_sha256": "371760ddb184b19f9bd56fb5267334142bc6e2636f56d096e4669d23ce27fdd7",
+        "destination": "matlab/workflows/meg/meg_native_trial_curves.m",
+        "destination_sha256": "98df8b267e3f7654662040ccebca0e078e556616ae9de9fae5c013b3ecb9a493",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_meg/code/matlab/session_lcmv/run_p04_exp005_group_stats.m",
+        "source_sha256": "6791ac2a88b830b2854057714cb83b32054c678d920c67a0045df50190cbc3af",
+        "destination": "matlab/workflows/meg/meg_native_group_curves.m",
+        "destination_sha256": "d84f22380b88a94489c323a2229fec9c2a6a887055a2b7dda18051fa64e1cfe2",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_meg/code/matlab/session_lcmv/run_p04_exp006_subject.m",
+        "source_sha256": "5bfe33c211acfaaea46321de247c7d343c8a69d2db9f24dbabacfdc620e05b4b",
+        "destination": "matlab/workflows/meg/meg_native_contrast_maps.m",
+        "destination_sha256": "b789304779c7161c1d2e2103a86b9d3988dae7eb2b720a0dc969eb810be64515",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_meg/code/matlab/session_lcmv/run_p04_exp006_group_stats.m",
+        "source_sha256": "1dbe132d31ae348a04d9ef9108669b7a04ac9dd23b56ace7ebc8ffceeb70381b",
+        "destination": "matlab/workflows/meg/meg_group_contrast_maps.m",
+        "destination_sha256": "bb72d5231067f2af877b59f63f523659e828e2ed40cd9e04f4644de035720d82",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_meg/code/matlab/session_lcmv/p04_exp011_export_metrics.m",
+        "source_sha256": "edb16147a6cb360acdf4cb2b62ddeaefb07aa56802c24ab5362212a3e83accf6",
+        "destination": "matlab/workflows/meg/meg_bold_export_metrics.m",
+        "destination_sha256": "499d8794ec2a18423f11f272903f1cec7af8b4221350be8f9db22bef48147453",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_meg/code/matlab/session_lcmv/p04_exp011_generate_bold.m",
+        "source_sha256": "0540af5051e343f998a85a2a987453d4d2841f1adf5dfc3199ad1572d990ae69",
+        "destination": "matlab/workflows/meg/meg_bold_generate.m",
+        "destination_sha256": "db0c9f7ecd03a4f38245a8d0471a8f0ed23f27c44552a37f9411176d77851363",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_meg/code/matlab/session_lcmv/p04_exp011_grid_zscore.m",
+        "source_sha256": "98815697cd114139147b23837d38a638c85001ab3b683e60d76588df0f342e49",
+        "destination": "matlab/workflows/meg/meg_grid_zscore.m",
+        "destination_sha256": "8b10f26773438a38be2540b54230da8c8e586ed19736469fa2b9295ab9670c1b",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_meg/code/matlab/session_lcmv/p04_exp011_highpass.m",
+        "source_sha256": "a356ab462f5531d5f23fa26f16a21c520fdab0e0cbb8cb761d91b2625d278d3d",
+        "destination": "matlab/workflows/meg/meg_highpass.m",
+        "destination_sha256": "82b9fc3003e8403f07353b5453ee1e77130bf7c4235f8f3b1712713aad69f565",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_meg/code/matlab/session_lcmv/p04_exp011_load_config.m",
+        "source_sha256": "731fd25080a253f4d243a6e32fcd4615c3bd34b1b1604d8733f3832c49adf552",
+        "destination": "matlab/workflows/meg/meg_bold_config.m",
+        "destination_sha256": "f8a0324944aaa8d73d53fadcccac134ed029c79fb5f835029e17e56a09dafc8f",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_meg/code/matlab/session_lcmv/p04_exp011_preprocess_source.m",
+        "source_sha256": "4491fe1183f2fc4b3977b7d7265a7ea9d2a26dd1dd22f071d6342892f7d0cb05",
+        "destination": "matlab/workflows/meg/meg_bold_preprocess_source.m",
+        "destination_sha256": "ec6b302d5053dfe05b42c1f463d3a2597a2e5724c584f44ecb4627a9b270587e",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_meg/code/matlab/session_lcmv/p04_exp011_spm_hrf.m",
+        "source_sha256": "cb9febf192ce93c3a367c60848766a99c8e74eba3f1fa3134c31b5d492efee52",
+        "destination": "matlab/workflows/meg/meg_hrf.m",
+        "destination_sha256": "4a6536e4e06abe3ed3a5381f44ed3941e481731c3485a55c591057a9a0ffaf8a",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_meg/code/matlab/session_lcmv/p04_exp011_tc2mesh_hemi.m",
+        "source_sha256": "ec25d6ccbf8fa88208ee23fbd5d3b610764f9396092d576658a6622ae8c3c1f8",
+        "destination": "matlab/workflows/meg/meg_interpolate_hemisphere.m",
+        "destination_sha256": "6c04eb46414ffd3307fc116e4675cbe9ac043a960fd7096060f6b0a37142a1d6",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_meg/code/matlab/session_lcmv/run_p04_exp011_cof.m",
+        "source_sha256": "351242bb276c39b8c287285cb4bcf73c70a8d3f44f31b6f7a53139ef27e4842e",
+        "destination": "matlab/workflows/meg/meg_bold_velocity.m",
+        "destination_sha256": "0e3c2de4f19301e656978556566d6af3928acb2f7a97857a141e2563dd2f8e7c",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_meg/code/matlab/session_lcmv/run_p04_exp011_subject.m",
+        "source_sha256": "2a33460e5d4243c7a6c6c14bec1d013503ce1c3322e9f778e8b6019bb6adc6b0",
+        "destination": "matlab/workflows/meg/meg_bold_subject.m",
+        "destination_sha256": "44331af6feadd830d4603b1e2aa73ff734b29fa46a07844b1dafc6dcc3499479",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_meg/code/matlab/session_lcmv/run_p04_exp012_subject.m",
+        "source_sha256": "c8eed760993b06f67fc15315d28e57bc0e099fb43340964185e0ef6bc3407a9b",
+        "destination": "matlab/workflows/meg/meg_bold_contrast_maps.m",
+        "destination_sha256": "dc9d1922f0d13c733197e4f89739e067f2069c41a1432114e1720ec628e6d1f9",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_meg/code/matlab/session_lcmv/run_p04_exp012_group_stats.m",
+        "source_sha256": "eeb1f444de0a534f9d23d7e40eadbec158e04110bc192e8219e9ba05201aaea1",
+        "destination": "matlab/workflows/meg/meg_bold_group_maps.m",
+        "destination_sha256": "f3ee763f4df947ed7dfabf748f3d2f938f7fef27a610ce8e171fd3fe3b7a08b5",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_behavioral_operating_range/fig4_compute_historical_optimum.m",
+        "source_sha256": "3fbaf7a3ad218792766fbfbd6ab49d402391499503bcc28a1d84d7aea53a2c9c",
+        "destination": "matlab/workflows/behaviour/behaviour_group_profiles.m",
+        "destination_sha256": "53fae91c8ee35729ceff55cb79b507dbeb7d851cf773423e7bb4763150a26d5f",
+        "changes": [
+          "Preserve original group vertices, cutoffs and age/sex profile summaries.",
+          "Remove distance-trait fits, partial correlations, VIF and unique-effect models.",
+          "Pass computed traits explicitly; reject missing participant alignment."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_behavioral_operating_range/fig3_behavioral_load_hcp_wm.m",
+        "source_sha256": "f5d430dd7a83a47eacd5a8a91511fc37862d478177d15ff0f8c6799d761c1509",
+        "destination": "matlab/workflows/behaviour/behaviour_load_metrics.m",
+        "destination_sha256": "10760fd51d144232e50fa3dfa4e4d4bcc6a0072cf2bcbb8947f590323b35f4b6",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig3_behavioral_operating_range/fig3_behavioral_fit_metric_models.m",
+        "source_sha256": "785c19640e0f1433369a6336b60e96536ee0cc79a6c340f389a54696e0d91e03",
+        "destination": "matlab/workflows/behaviour/behaviour_metric_models.m",
+        "destination_sha256": "c288a38f6841dcfe4577072bbf6e39c928e0385da133b13a4eaf9439d6c11b52",
+        "changes": [
+          "Retain original ordinary quadratic fits for PS and OP only.",
+          "Remove dormant BOLD/FC models, Cook-distance refits, extra PQ fit and unreported FDR output."
+        ]
+      },
+      {
+        "source": "pipelines/legacy_manuscript/ed4_historical_replay.m",
+        "source_sha256": "2bfe6be965afbc8ba35d9975f927b6a8f32941e018204ae85d819ee5573e56cc",
+        "destination": "matlab/workflows/extended_data/surrogate_historical_summary.m",
+        "destination_sha256": "f04a44668083cba930f64deac249bfff3a3aec931cdf832d4ed6d44833f99ab5",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/legacy_manuscript/ed7c_historical_comparison.m",
+        "source_sha256": "6b63ec9ca1b3827223fb6a97c0d863b879bc3b08e88485fe8de988c3a854b0cc",
+        "destination": "matlab/workflows/extended_data/task_activation_comparison.m",
+        "destination_sha256": "6f99719ab65cbe7e2f106939cbb133e7ca689384191edae25789e52d9c5d73e9",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/legacy_manuscript/ed7ef_activation_correspondence.m",
+        "source_sha256": "9f335bed9968464e4441ca16ca513b66f01755bb457773f60fbdec886e0ebe06",
+        "destination": "matlab/workflows/extended_data/activation_correspondence.m",
+        "destination_sha256": "eb285c7fe2fa64667d6dd830fa4c091579f4b9fa2d8042a045ae519fb7fbc6ac",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/legacy_manuscript/historical_task_statistics.m",
+        "source_sha256": "e3db05c8c75713dbac7139e408d0b8a44a8999fed6b3aa7b266a8882b1558dcf",
+        "destination": "matlab/workflows/extended_data/task_condition_statistics.m",
+        "destination_sha256": "9ef835413bd46959f40280a10cca7087208b9e764088bc32ff994563277852bb",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/legacy_manuscript/ed9_spatial_statistics.m",
+        "source_sha256": "320753d161b5b3f5e2b325e8068257cc6af5e91947e76994a850ff40b5ad16d3",
+        "destination": "matlab/workflows/extended_data/task_spatial_statistics.m",
+        "destination_sha256": "3626529e8b12af47661c41f5986a4809730b99aba45379fefc3a93ad098fd13b",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/legacy_manuscript/ed4_solver/velocity_field_multidim_ell2.m",
+        "source_sha256": "f3789136f21e309dc03004ce2b73f807cd22bf247f60c1e520a8b9d7e899fa42",
+        "destination": "matlab/workflows/extended_data/surrogate_cof_solve.m",
+        "destination_sha256": "0efec8dd7bbadeb2aafe4eb9ab48fb90098c38980b2d40a8ce1e4a37884c6760",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/legacy_manuscript/ed4_solver/extract_velocity_field_hilbert.m",
+        "source_sha256": "64f0776a3027b1f7fb1521613cd19288e51e9cfc02e5d7c21814cee9415e8ead",
+        "destination": "matlab/workflows/extended_data/surrogate_estimate_velocity.m",
+        "destination_sha256": "448238cc6fc843e2d5ef2f827c498a13d2acdb360fa181767b76fb586cf29af6",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/legacy_manuscript/ed4_solver/calc_DivCurl.m",
+        "source_sha256": "404e707c48f05153ba5c89a8ba2cff1f147481e1044e733a5e25c377f073cee9",
+        "destination": "matlab/workflows/extended_data/surrogate_velocity_derivatives.m",
+        "destination_sha256": "26f10f4b775cf8fb6e2af50eea0dc23f275c51157ad761a5305f6629b004ab6e",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/legacy_manuscript/ed4_solver/map2vec.m",
+        "source_sha256": "a8e17f84b2f1576b8e73b18431a76f208b044f2b35268ab0f676de64a9321b86",
+        "destination": "matlab/workflows/extended_data/surrogate_grid_to_vector.m",
+        "destination_sha256": "a616fc47a2961deaa0b72a5331fe7612d2aa9aadb868357be16468f7c5fe32dd",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/legacy_manuscript/ed4_solver/vec2map.m",
+        "source_sha256": "04c60e60bdeb6be37bf116f7667ef52c55ec99251357b42a836d6b70f1cbc580",
+        "destination": "matlab/workflows/extended_data/surrogate_vector_to_grid.m",
+        "destination_sha256": "7924b6a65875493ac320959d78d840acc6d4c2db3295aad266717490bb1403c4",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig5_rnn_analyses/hidden_to_pattern_metrics.m",
+        "source_sha256": "2b5e389db3fd27ae5f48a90b019c4727f168db7364ee2e41b6652694ffb7fd52",
+        "destination": "matlab/workflows/rnn/rnn_hidden_metrics.m",
+        "destination_sha256": "acdc21a08defb5dee0d037564cf904d40b36834f48c5491dbc36833e55db36cc",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig5_rnn_analyses/run_RNN_all_perturbations_PQPS_sweep.m",
+        "source_sha256": "136dbe5b3b0c784f32fab109b480c5c9735068a31075a8f455e33629695abf97",
+        "destination": "matlab/workflows/rnn/rnn_perturbation_sweep.m",
+        "destination_sha256": "28d58d43fb4efcdf72227b45cb973775dc54e895fe94facde4e26922de723a85",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig5_rnn_analyses/rnn_scaling.py",
+        "source_sha256": "d63ca681c570b800a5990cc05a7dde9f8f4a7aff6a3dc0a805a29f8338b1d9b8",
+        "destination": "python/rnn/rnn_scaling.py",
+        "destination_sha256": "2dbf3d9730fa60201ae7c73fcf4f59c83703209fd0a8b41b1f90eaa84d9ec193",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig5_rnn_analyses/rnn_perturbation_summary.py",
+        "source_sha256": "f1504285f40d534c80d470e9856ced34f338e8a3fe583304435e7767b7901043",
+        "destination": "python/rnn/rnn_perturbation_summary.py",
+        "destination_sha256": "3f708bde7fd33bfa53af39728b852c34f30cabd2431a365f991f2332774d9b37",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "src/python/rnn_wm/activation_dynamics_LeakyRNN_wm.py",
+        "source_sha256": "6d9acf9a4a1560c491f19031f22d80de07778a4abf810af6ba5700656eb8358e",
+        "destination": "python/rnn/train_working_memory.py",
+        "destination_sha256": "9de792b7cf3afc9ca118e7055034922fe52f2ac4278b0b94c9186efff01d16c6",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "configs/compute/simulation.example.json",
+        "source_sha256": "dd042bb156883e697721cb7d70a180de65a2d0bbe1ccf2b9a60bff7b3ee7353d",
+        "destination": "configs/simulations/simulation.example.json",
+        "destination_sha256": "dd042bb156883e697721cb7d70a180de65a2d0bbe1ccf2b9a60bff7b3ee7353d",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "configs/compute/hcp_vvf_rest.example.json",
+        "source_sha256": "f260a91167880a79e90c9ca95815fd1bde508d2edb80c8370fa4dde27be436fe",
+        "destination": "configs/rest/preprocess.example.json",
+        "destination_sha256": "f260a91167880a79e90c9ca95815fd1bde508d2edb80c8370fa4dde27be436fe",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "configs/compute/hcp_vvf.example.json",
+        "source_sha256": "685381a940211de8719018d120f294b5c76f10918fbbed4eaa60a03dc27f05b7",
+        "destination": "configs/fmri/preprocess.example.json",
+        "destination_sha256": "685381a940211de8719018d120f294b5c76f10918fbbed4eaa60a03dc27f05b7",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "configs/compute/hcp_task_feature_flags.json",
+        "source_sha256": "efd981a43ead59e672a5a6b5baf3170535a840ce0b7a29244a35a431aa43cee2",
+        "destination": "configs/fmri/feature_flags.json",
+        "destination_sha256": "efd981a43ead59e672a5a6b5baf3170535a840ce0b7a29244a35a431aa43cee2",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "configs/compute/fig4e_historical_inputs.json",
+        "source_sha256": "7f4529ca118bc2f322990aeccb3fd1e3df292e44084c7cae5873daba4394eb58",
+        "destination": "configs/behaviour/historical_input_hashes.json",
+        "destination_sha256": "7f4529ca118bc2f322990aeccb3fd1e3df292e44084c7cae5873daba4394eb58",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "configs/compute/ed4_historical.example.json",
+        "source_sha256": "59643cce8577143086b9c3285d05fb00e4b2d52f3593b9226eb64704abb83e4f",
+        "destination": "configs/extended_data/surrogates.example.json",
+        "destination_sha256": "59643cce8577143086b9c3285d05fb00e4b2d52f3593b9226eb64704abb83e4f",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "configs/compute/rnn_scaling.example.json",
+        "source_sha256": "d23af17e4fd2b73995a018b029fbecdb9243cb387fc252c5088032fc5e40ce14",
+        "destination": "configs/rnn/scaling.example.json",
+        "destination_sha256": "d23af17e4fd2b73995a018b029fbecdb9243cb387fc252c5088032fc5e40ce14",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "configs/compute/rnn_perturbation_summary.example.json",
+        "source_sha256": "86988b624ed6b011482f78d0031e09d56f0cb29db3e37d785f4deded9c0fb553",
+        "destination": "configs/rnn/summary.example.json",
+        "destination_sha256": "86988b624ed6b011482f78d0031e09d56f0cb29db3e37d785f4deded9c0fb553",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "configs/compute/rnn_perturbations.example.json",
+        "source_sha256": "385f5371af5498be8d43d8d73d60b30d0331a4daff903b59dcd75af115a2cfce",
+        "destination": "configs/rnn/perturbations.example.json",
+        "destination_sha256": "d4696b98ca6c73cea834cd7932e44f1de8bc516ddb7a4896025cb733769cb6a2",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "configs/compute/meg/p04_exp004_condition_stats.json",
+        "source_sha256": "227b5e8e75b2cad74b8c5d17d5bae4e5f430b9df82558e4a67b89cb20dcf0840",
+        "destination": "configs/meg/native_conditions.example.json",
+        "destination_sha256": "4caabb4dcafa118828a22e8155276eb92edc345a32dd81d86e355239c50193c2",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "configs/compute/meg/p04_exp005_trial_time.json",
+        "source_sha256": "e49a63c668554e30022743ab1febac2ed4a8dec5ca2a30586ec8af112dceed0c",
+        "destination": "configs/meg/native_trial_curves.example.json",
+        "destination_sha256": "5d2f3d10b73a1a42c56e10c686c0a16b78af7ce15785547d33c94b4e81afff69",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "configs/compute/meg/p04_exp006_level1_level2_maps.json",
+        "source_sha256": "6128f9e355dc393e434e9e5f793d8e53f0fd46243d3da1b5aadfe370b3424925",
+        "destination": "configs/meg/native_contrast_maps.example.json",
+        "destination_sha256": "77fba635fe22bbdd8ab43eeda0cdf46b38d70db0c9aca63993214bce987f88fb",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "configs/compute/meg/p04_exp011_meg_bold.json",
+        "source_sha256": "9ed437708392a2e41668e9ee725b5a16200555500a04dd000900f33f021bda91",
+        "destination": "configs/meg/bold.example.json",
+        "destination_sha256": "d47aecc69423e1a605e8318b71531a9ca3c7bcaa9be338700fa06272d6ac0ecb",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "configs/compute/meg/p04_exp012_megbold_level1_level2_maps.json",
+        "source_sha256": "7548df7d631c05a92552e45fd25ddaa3424acf2a5e9f76b5fd53bb33d8afaf60",
+        "destination": "configs/meg/bold_contrast_maps.example.json",
+        "destination_sha256": "b10d9b89740b3fbdead996158b3b4355b90791feee0738adc09711ab7293783c",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "pipelines/fig1_cof_validation/simulation/compute_simulation.m",
+        "source_sha256": "f79038806b87e0b15eb05be613a4e9f797faccfcd945277b5d6a4d4126d17129",
+        "destination": "matlab/workflows/simulations/simulate_wavefields.m",
+        "destination_sha256": "0716e6e6a24d9739af39c277018d48b6f1ca9aa806e2a03af8654bf527d2cd0e",
+        "changes": [
+          "Descriptive names; shared API; portable paths; comments."
+        ]
+      },
+      {
+        "source": "projects/01_cof_human_fMRI/reproduction/public_release_20261125_v2/new_files/docs/COMPUTATION.md",
+        "source_scope": "authored_release_adapter",
+        "source_sha256": "b0bf7c7d58628ef611883f0ba966387cba4ea5ba9091aba5e9e64d57505ed126",
+        "destination": "docs/COMPUTATION.md",
+        "destination_sha256": "b0bf7c7d58628ef611883f0ba966387cba4ea5ba9091aba5e9e64d57505ed126",
+        "changes": [
+          "New explicit input contract / documentation; retained formula implementation calls."
+        ]
+      },
+      {
+        "source": "projects/01_cof_human_fMRI/reproduction/public_release_20261125_v2/new_files/configs/behaviour/export.example.json",
+        "source_scope": "authored_release_adapter",
+        "source_sha256": "0a417ba11068a96c3faf9b01e17a0d3ce1d4a6b1ebb35341908516352ce7b774",
+        "destination": "configs/behaviour/export.example.json",
+        "destination_sha256": "0a417ba11068a96c3faf9b01e17a0d3ce1d4a6b1ebb35341908516352ce7b774",
+        "changes": [
+          "New explicit input contract / documentation; retained formula implementation calls."
+        ]
+      },
+      {
+        "source": "projects/01_cof_human_fMRI/reproduction/public_release_20261125_v2/new_files/configs/behaviour/group_profiles.example.json",
+        "source_scope": "authored_release_adapter",
+        "source_sha256": "d40486c3d194c4010040c0fb0b3857adc2a1ff0cbf3bd28efb0b0ae6680c3d2a",
+        "destination": "configs/behaviour/group_profiles.example.json",
+        "destination_sha256": "d40486c3d194c4010040c0fb0b3857adc2a1ff0cbf3bd28efb0b0ae6680c3d2a",
+        "changes": [
+          "New explicit input contract / documentation; retained formula implementation calls."
+        ]
+      },
+      {
+        "source": "projects/01_cof_human_fMRI/reproduction/public_release_20261125_v2/new_files/configs/behaviour/metric_models.example.json",
+        "source_scope": "authored_release_adapter",
+        "source_sha256": "629f31b0513a841a4bf535b5a0a6b6a88505dba911aa3bc775fef65c844a5c25",
+        "destination": "configs/behaviour/metric_models.example.json",
+        "destination_sha256": "629f31b0513a841a4bf535b5a0a6b6a88505dba911aa3bc775fef65c844a5c25",
+        "changes": [
+          "New explicit input contract / documentation; retained formula implementation calls."
+        ]
+      },
+      {
+        "source": "projects/01_cof_human_fMRI/reproduction/public_release_20261125_v2/new_files/matlab/workflows/behaviour/behaviour_export_inputs.m",
+        "source_scope": "authored_release_adapter",
+        "source_sha256": "e357cbad64e6608a28ba32b456911dea7779711e38671a1f78846b7f67aadba1",
+        "destination": "matlab/workflows/behaviour/behaviour_export_inputs.m",
+        "destination_sha256": "e357cbad64e6608a28ba32b456911dea7779711e38671a1f78846b7f67aadba1",
+        "changes": [
+          "New explicit input contract / documentation; retained formula implementation calls."
+        ]
+      },
+      {
+        "source": "projects/01_cof_human_fMRI/reproduction/public_release_20261125_v2/new_files/matlab/workflows/behaviour/behaviour_run_metric_models.m",
+        "source_scope": "authored_release_adapter",
+        "source_sha256": "e087f35f7948f90eff3aa18a4fe754603145f2a8b765dcbae447224c38ead61d",
+        "destination": "matlab/workflows/behaviour/behaviour_run_metric_models.m",
+        "destination_sha256": "e087f35f7948f90eff3aa18a4fe754603145f2a8b765dcbae447224c38ead61d",
+        "changes": [
+          "New explicit input contract / documentation; retained formula implementation calls."
+        ]
+      },
+      {
+        "source": "projects/01_cof_human_fMRI/reproduction/public_release_20261125_v2/new_files/matlab/workflows/behaviour/behaviour_subject_list.m",
+        "source_scope": "authored_release_adapter",
+        "source_sha256": "e5c00d38b1eb242c1240e51dc4422eddfd4ad5bfc7ce4fba83eb1cf0c473bc4c",
+        "destination": "matlab/workflows/behaviour/behaviour_subject_list.m",
+        "destination_sha256": "e5c00d38b1eb242c1240e51dc4422eddfd4ad5bfc7ce4fba83eb1cf0c473bc4c",
+        "changes": [
+          "New explicit input contract / documentation; retained formula implementation calls."
+        ]
+      },
+      {
+        "source": "projects/01_cof_human_fMRI/reproduction/public_release_20261125_v2/new_files/matlab/workflows/behaviour/behaviour_verify_inputs.m",
+        "source_scope": "authored_release_adapter",
+        "source_sha256": "c4c8271300ce50634cb624302a6cff725e3e8a870681801c59031dbd15571096",
+        "destination": "matlab/workflows/behaviour/behaviour_verify_inputs.m",
+        "destination_sha256": "c4c8271300ce50634cb624302a6cff725e3e8a870681801c59031dbd15571096",
+        "changes": [
+          "New explicit input contract / documentation; retained formula implementation calls."
+        ]
+      }
+    ],
+    "statistics_source_mapping": [
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/statistics/experiments/P01-EXP-017/extensions/fd_v1/run.py",
+        "sha256": "40cdfb025a8cabf8181253b57f13dd91e471395b7c49c2355d978a234d345277"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/statistics/experiments/P01-EXP-018/code/prepare_features.py",
+        "sha256": "b2a405615fa9bda3a99bfcfcace4312852cfcf498b779f70846fc912b082ef38"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/statistics/experiments/P01-EXP-018/extensions/linear_components_v1/code/analyze.py",
+        "sha256": "11f6bea04861371a3e09f2bca1e7f56d0c75e9d24bbba212ba8b2404af54ed91"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/statistics/experiments/P01-EXP-024/run.py",
+        "sha256": "76b02846571b717a4e85c62a02a2d76c07447349990c51b0dd8546d6cf01bfb1"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/statistics/experiments/P01-EXP-030/run.py",
+        "sha256": "39d50e8cd99b8c153a6083610f4d19f054ecfa077a0619c058e2c438d9bbe959"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/statistics/experiments/P01-EXP-031/run.py",
+        "sha256": "538b415ceedcf4be5a5134470c3ec5c0d493c31a163b14024a99272aa1ad2349"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/statistics/experiments/P01-EXP-024/family_stats.py",
+        "sha256": "d9be0cae70f0e75134c61fa7cae4cfe5e0ea64441e51e791c6c1bc2b41a39b99"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/statistics/experiments/P01-EXP-026/family_stats.py",
+        "sha256": "d9be0cae70f0e75134c61fa7cae4cfe5e0ea64441e51e791c6c1bc2b41a39b99"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/statistics/experiments/P01-EXP-017/code/stats_core.py",
+        "sha256": "6b205d065f0b9e31b5d78d9711b99c4d61439af52f970f556a7a4dbcbc7bd13a"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/statistics/experiments/P01-EXP-024/parent_snapshot/run_audit.py",
+        "sha256": "26760a26e07b472d3f03df84661a5246ce3b178a2ba6adf79a741286077674f8"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/statistics/experiments/P01-EXP-024/parent_snapshot/config.yaml",
+        "sha256": "0bb42aa2521ffeac7a12b2d266b4a8e067f49b862de4b4be4216c89dbbd5856f"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/statistics/experiments/P01-EXP-018/code/map_stats.py",
+        "sha256": "d77e52bf31a5b0564814d594668e8f975488b697eeb97c58ba206049847d79d3"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/statistics/experiments/P01-EXP-018/extensions/linear_components_v1/config.yaml",
+        "sha256": "cbb9e4a934a3768292d5d5b14821185607e1f507da640c5b9d86a13cb7068d94"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/statistics/experiments/P01-EXP-026/run.py",
+        "sha256": "e6302a7780adeeb20bf07929824c9abdaf368cf29997b2c9c6159411c09938fe"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/statistics/experiments/P01-EXP-026/run.py",
+        "sha256": "e6302a7780adeeb20bf07929824c9abdaf368cf29997b2c9c6159411c09938fe"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/statistics/experiments/P01-EXP-026/config.yaml",
+        "sha256": "98eee8760397b78f74ea340ad1de250327631ad7b7758dbe13e644d6157afb0c"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/statistics/experiments/P01-EXP-030/spatial_core.py",
+        "sha256": "fb093873249e418e32e99851028dc3365f7ca2d5879f6eb261a80d62cd058ac2"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/statistics/experiments/P01-EXP-030/prepare_geometry.py",
+        "sha256": "58914e945a2c9738b4b9fbbd13bc9c780bcf5ec8aa9a2ad1fbc02d6d9fc74b82"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/statistics/experiments/P01-EXP-030/prepare.py",
+        "sha256": "2502ba94729681f31efe615f7e895fdcd84d31f4e0ee7c71156a4f871bcc3832"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/statistics/experiments/P01-EXP-031/bridge_group.py",
+        "sha256": "9347e9d0672a4105c2e403ea026c45994d20038d0b39340b4ddf69f3e473c205"
+      },
+      {
+        "source": "releases/project01-code-20261125/cortical-propagation-motifs/pipelines/fig3_meg/code/python/p04_exp011_group.py",
+        "sha256": "5e50381823d56f1bbff1a238160e332170c560e1f0f7ac7a9cc202c3350d54f7"
+      }
+    ],
+    "statistics_module_map": {
+      "analysis/common/family.py": [
+        "P01-EXP-024/family_stats.py",
+        "P01-EXP-026/family_stats.py"
+      ],
+      "analysis/common/regression.py": [
+        "P01-EXP-017/code/stats_core.py"
+      ],
+      "analysis/task/": [
+        "P01-EXP-024/run.py",
+        "P01-EXP-024/parent_snapshot/run_audit.py"
+      ],
+      "analysis/behaviour/global_associations.py": [
+        "P01-EXP-017/extensions/fd_v1/run.py"
+      ],
+      "analysis/behaviour/prepare_density.py": [
+        "P01-EXP-018/code/prepare_features.py"
+      ],
+      "analysis/behaviour/local_associations.py": [
+        "P01-EXP-018/extensions/linear_components_v1/code/analyze.py",
+        "P01-EXP-018/code/map_stats.py"
+      ],
+      "analysis/spatial/": [
+        "P01-EXP-030/prepare_geometry.py",
+        "P01-EXP-030/prepare.py",
+        "P01-EXP-030/spatial_core.py",
+        "P01-EXP-030/run.py"
+      ],
+      "analysis/meg/": [
+        "P01-EXP-031/run.py",
+        "P01-EXP-031/bridge_group.py",
+        "../../pipelines/fig3_meg/code/python/p04_exp011_group.py"
+      ],
+      "analysis/rnn/": [
+        "P01-EXP-026/run.py"
+      ]
+    }
+  },
+  "clinical_historical_sources": [
+    {
+      "source_filename": "plot_SCZ_joint_PQ_Acc_marginals_groupmetrics_horizontalDensity.m",
+      "sha256": "f70d5c1a1ad64afe1573f09fc4f50bf3623552ea7c141ec918fa822fce134fdc"
+    },
+    {
+      "source_filename": "plot_SCZ_PQAcc_coloredByPhenotype_withRaincloud.m",
+      "sha256": "03e1e41dd11db380d1a3912460406118eaaf118ab62fd22274db455f883d68d8"
+    }
+  ],
+  "changes": [
+    "Group source by scientific purpose; descriptive unique MATLAB names and unified Python CLI.",
+    "Share identical statistical and preprocessing helpers; remove project-workspace code generation.",
+    "Retain adopted estimators and configured seed streams; remove unreported analyses and all empirical results.",
+    "Clinical sources are narrowed to adopted group models, quadrants, disorganization trend and method-comparison summaries.",
+    "Preserve across-run pooled clinical normalization; guard missing pairs, input IDs, dimensions, rank and output paths.",
+    "Remove unused PV method; remove global motif tracking state without changing its historical matching rule.",
+    "Restore warning state on preprocessing exit; repair optional unsmoothed derivative branch.",
+    "Bundle matching licensed CIFTI/GIfTI/XMLTree source closure and optional plotting helpers; retain third-party terms."
+  ]
+}

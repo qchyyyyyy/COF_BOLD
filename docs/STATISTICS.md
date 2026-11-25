@@ -1,0 +1,45 @@
+# Manuscript statistics
+
+Run commands from the repository root after installing `requirements.txt`. Each command reads an explicit JSON configuration; relative paths are resolved from that configuration's directory. Edit the example input paths and choose a new output directory outside the public checkout. The examples use a sibling `private_outputs` directory. Existing output directories and output paths inside the checkout are rejected. No code is copied into temporary experiment workspaces and importing a module performs no data IO.
+
+| Command | Configuration | Adopted analysis |
+| --- | --- | --- |
+| `task` | `configs/analysis/task.json` | Fig. 2: participant-equal paired differences, family CR1, whole-family percentile bootstrap; BH within WM 27 and other-task 75 tests |
+| `behaviour-global` | `configs/analysis/behaviour_global.json` | Fig. 4a–d: D+C linear/quadratic coefficients, age/sex/scan FD covariates, family CR1, BH 8 |
+| `behaviour-features` | `configs/analysis/behaviour_features.json` | Extract the four original D/C density matrices with their original participant/grid order |
+| `behaviour-local` | `configs/analysis/behaviour_local.json` | Fig. 4f: D and C separately against raw accuracy and RT; age/sex/scan FD; family CR1; joint Holm across eight maps |
+| `spatial-geometry` | `configs/analysis/spatial_geometry.json` | Prepare fsLR geometry, surface area, atlas parcels and fixed working-memory annotation |
+| `spatial-prepare` | `configs/analysis/spatial_prepare.json` | Fig. 2: 12 family-CR1 ROI contrasts, Holm 12; prepare regional spatial maps |
+| `spatial` | `configs/analysis/spatial.json` | Figs. 1–2: 9,999 hemisphere-constrained bijective spins, Holm 2 and Holm 12 |
+| `meg` | `configs/analysis/meg.json` | Fig. 3: six native paired Wilcoxon tests/Holm; six BOLD-like sign-flip tests/BH; unthresholded spatial effects |
+| `meg-aggregate` | `configs/analysis/meg_aggregate.json` | Average BOLD-like blocks within scan, then average scans 6 and 7 with equal weight |
+| `rnn` | `configs/analysis/rnn.json` | Fig. 6: 14 paired scaling tests/Holm; two method-adjusted, model-clustered curvature tests/Holm |
+
+Example:
+
+```console
+python -m analysis task --config configs/analysis/task.json
+python -m pytest tests/python
+```
+
+Do not use `python -O`; input-contract assertions are required. The examples retain the manuscript cohort sizes, seeds, test families and bootstrap counts. Smaller synthetic inputs are used only in tests. Production inputs are external and are not distributed here. The run provenance records input SHA-256 hashes and verifies that files did not change during analysis. Optional `input_sha256` maps absolute input filenames to expected hashes; the density-feature and RNN examples additionally pin the adopted arrays/files.
+
+## Inputs and outputs
+
+**Task.** `input_root` contains `tfMRI_<TASK>_LR/group/` with the subject list, events, and global quantity/size/order-parameter MAT files. The configuration specifies exact task names, metric fields, cohort sizes, frame counts and event names. Events are reconstructed from inclusive MATLAB block boundaries; the original order of overlapping blocks is preserved. Ten frames are trimmed at each end. `family_csv` has `Subject,Family_ID`; missing family membership is excluded and counted. Outputs are `contrasts.csv`, `summary.json`, and provenance, with no comparison against stored publication results.
+
+**Behaviour.** The MATLAB `behaviour_export_inputs` workflow creates `participants.csv` with `Subject,age,sex,source_0,source_2,sink_0,sink_2,boxcox_0,boxcox_2,accuracy_0,accuracy_2,rt_0,rt_2`. Preserve the original per-block Box–Cox transformation before condition averaging. Motion files are read from `<motion_root>/<Subject>/MNINonLinear/Results/tfMRI_WM_LR/Movement_Regressors.txt`: the first six columns are translation in mm and rotation in degrees, with a 50 mm head radius. The original 405 volumes yield 404 adjacent differences; their mean is scan FD. `behaviour-global` writes `participants_with_fd.csv` for the local analysis. This generated participant-level file is restricted working data and must remain outside Git.
+
+Density preparation reads the original `tfMRI_WM_LR_numPattern-block_voxel_LR_COF_old.mat` fields `SourceMap_0B,SinkMap_0B,SourceMap_2B,SinkMap_2B`, the original coordinate mask and task subject list. Both `subjectList` and `SubjectList` input aliases are supported; conflicting simultaneous fields are rejected. Output `density_features.npz` contains `Subject`, `mask`, and four participant-by-location arrays. Local fitting requires an exactly aligned participant table and complete covariates. `maps.npz` retains beta, SE, t, raw P, confidence intervals, partial r, validity and joint Holm maps under `raw_accuracy_<condition>_<D|C>_<accuracy|rt>_<field>`. Raw P < 0.05 is a descriptive display threshold. The joint Holm family is the finite tests across all eight maps. No local quadratic or transformed-accuracy sensitivity analysis is run.
+
+**Spatial.** Geometry uses the coordinate template, BAT surface annotation, fsLR flat/sphere/midthickness surfaces, and the MMP360 dlabel file. `nibabel` reads GIFTI/CIFTI. The original grid-to-surface interpolation and surface-area parcel weighting are retained. Spatial preparation reads the saved principal-mode render input, cached task effect maps and participant COPE files. The grid COPE vectors use MATLAB column-major order, distinct from the density extraction above. The preparation writes `prepared_maps.npz` and `roi_tests.json`; spin inference reads the NPZ and writes only the two adopted test families. Original maps, sign and principal-mode definition are preserved; no SVD is re-estimated.
+
+**MEG.** Native block input has `subject_id,condition,PQ_mean,PS_mean,n_scans_PQ,n_scans_PS`; BOLD-like input has `subject_id,branch,condition,PQ,PS,n_scans`, with source branch value `exact_project1`. Each participant contributes both scans and all three conditions. Native bootstrap intervals are read from the original MATLAB `block_pairwise.csv` (`metric,contrast,p_raw,p_holm,mean_difference_a_minus_b,bootstrap_ci_low,bootstrap_ci_high`), while P values and Holm adjustment are independently recalculated. Native contrast labels preserve `0-back_vs_2-back`, `0-back_vs_fixation`, and `2-back_vs_fixation`; the BOLD-like branch retains its original `2-back_minus_0-back` orientation. This preserves the original MATLAB bootstrap result rather than substituting a different random-number generator. BOLD-like inference regenerates the seeded sign-flip and bootstrap calculations. The native time-course CSV is optional and produces means, SEMs and a participant-averaged fixation reference only. No time-bin significance tests are included.
+
+`meg-aggregate` creates the required BOLD-like participant input from the MATLAB `meg_bold_export_metrics` block CSV files. Supply a `block_files_csv` manifest with `subject_id,scan_id,path`, one file for each participant/scan 6 or 7. Each block file has `subject_id,scan_id,condition,PQ,PS`. Files are named `block_metrics_exact_project1.csv` by the MATLAB producer. Paths in the manifest resolve relative to the JSON configuration, and file identities must match the manifest. The aggregation retains the adopted within-scan block average followed by equal-weight scan average; unequal numbers of blocks do not reweight the scans.
+
+For each optional MEG spatial branch, `participant_files_csv` has unique `subject_id,path` rows. Paths resolve relative to the analysis JSON file. Each MAT file contains `participant.cope` with shape locations × 3 contrasts × 4 patterns and the MATLAB producer's `subject_id,V_mask,mask_index,pattern_names,contrasts,contrast_vector` metadata. Duplicate file paths, identity mismatches, permuted grid indices and inconsistent contrast/pattern order are rejected before pooling. The output is an unthresholded paired effect-size array with its spatial metadata; the configuration pins the manuscript counts (68 native, 83 BOLD-like).
+
+**RNN.** Scaling MAT arrays have time × trial × condition × model axes, with conditions fixation, 0-back, 2-back. D and C are averaged; time/trials are averaged within model; the paired contrast is 2-back minus 0-back. Model files and their shapes are listed explicitly in the JSON. The perturbation CSV uses `subject` as model identity and `trial_index,method,severity,fraction,repeat` as repeat/setting identifiers. Required measures are `accuracy,PQ_DC_mean,PS_DC_mean` plus their `clean_` and `delta_` values for input-consistency checks. Repeats are averaged within trial, then trials within model/setting. Each model receives equal total weight. Curvature models include method intercepts and model-clustered CR1 covariance with t(G−1), plus a 2,000-draw model bootstrap. Outputs contain only scaling and curvature inference and coverage counts.
+
+Clinical and descriptive MATLAB workflows are documented separately. No SCZ result, clinical HC3 alternative, old experiment-comparison report, or empirical result fixture is distributed in this package.

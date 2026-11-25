@@ -1,0 +1,9 @@
+{
+  "block_files_csv": "../../data/meg/boldlike/block_files.csv",
+  "scan_ids": [
+    "6",
+    "7"
+  ],
+  "expected_n": 83,
+  "output_dir": "../../../private_outputs/meg_aggregate"
+}

@@ -1,0 +1,13 @@
+{
+  "rootDir": "/path/to/external/trained/models",
+  "subjects": [
+    "YOUR_MODEL_ID"
+  ],
+  "outDir": "results/rnn_six_perturbations",
+  "trialIndices": [
+    1,
+    2,
+    3
+  ],
+  "force": false
+}

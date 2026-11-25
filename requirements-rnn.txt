@@ -1,0 +1,4 @@
+-r requirements.txt
+torch>=2.1
+networkx>=3.2
+tqdm>=4.66

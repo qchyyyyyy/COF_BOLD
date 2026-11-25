@@ -1,0 +1,75 @@
+{
+  "input_csv": "/path/to/external/six_methods_from_saved_figures.csv",
+  "input_sha256": "509d184fe93aa37ddb92a926e55dae6fe2ce72d612f8c22331d9fdcb0695bea6",
+  "expected_rows": 4676,
+  "expected_rows_per_setting": 167,
+  "source_status": "original_MAT_verified_all_4676_keyed_rows_job9479292",
+  "output_dir": "results/rnn_historical_v2",
+  "methods": [
+    "input_noise",
+    "input_dropout",
+    "hidden_noise",
+    "recurrent_prune",
+    "recurrent_noise",
+    "leak_global"
+  ],
+  "baseline_specs": [
+    [
+      "hidden_noise",
+      0.2
+    ],
+    [
+      "input_noise",
+      0.25
+    ]
+  ],
+  "baseline_quantile": 0.1,
+  "accuracy_tolerance": 0.01,
+  "layers": [
+    {
+      "method": "recurrent_noise",
+      "severity": 0.7,
+      "color": [
+        0.2,
+        0.42,
+        0.82
+      ]
+    },
+    {
+      "method": "hidden_noise",
+      "severity": 0.4,
+      "color": [
+        0.94,
+        0.55,
+        0.18
+      ]
+    },
+    {
+      "method": "input_noise",
+      "severity": 0.6,
+      "color": [
+        0.94,
+        0.55,
+        0.18
+      ]
+    },
+    {
+      "method": "leak_global",
+      "severity": 0.35,
+      "color": [
+        0.76,
+        0.18,
+        0.24
+      ]
+    },
+    {
+      "method": "recurrent_noise",
+      "severity": 1.0,
+      "color": [
+        0.76,
+        0.18,
+        0.24
+      ]
+    }
+  ]
+}

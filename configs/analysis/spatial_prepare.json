@@ -1,0 +1,10 @@
+{
+  "geometry_npz": "../../../private_outputs/spatial_geometry/geometry.npz",
+  "task_effects_mat": "../../data/spatial/task_effects.mat",
+  "mode_render_mat": "../../data/spatial/principal_modes.render.mat",
+  "wm_task_root": "../../data/task/tfMRI_WM_LR",
+  "family_csv": "../../data/family_metadata.csv",
+  "expected_n": 1083,
+  "roi": "working_memory",
+  "output_dir": "../../../private_outputs/spatial_prepared"
+}

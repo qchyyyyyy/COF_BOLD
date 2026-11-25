@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "workflow": "meg_native_contrast_maps",
+  "parent_derivative_experiment": "P04-EXP-003",
+  "parent_workflow": "P04-EXP-003",
+  "processed_root_env": "COF_MEG_PROCESSED_ROOT",
+  "processed_root": "",
+  "results_root_env": "COF_MEG_RESULTS_ROOT",
+  "results_root": "",
+  "raw_root_env": "COF_MEG_RAW_ROOT",
+  "raw_root": "",
+  "fieldtrip_root_env": "FIELDTRIP_ROOT",
+  "fieldtrip_root": "",
+  "megconnectome_root_env": "MEGCONNECTOME_ROOT",
+  "megconnectome_root": "",
+  "subject_manifest_relative": "private/meg_subjects.txt",
+  "scan_ids": [
+    "6",
+    "7"
+  ],
+  "expected_subjects": 83,
+  "metric_processed_subdir": "srcsessionlcmv_power_exp003",
+  "metric_results_subdir": "P04-EXP-003",
+  "source_session_scope": "task_scan",
+  "source_workflow": "Wrkmem",
+  "source_cof_subdir": "cof_power_envelope",
+  "raw_datafile_template": "{raw_root}/{subject_id}/unprocessed/MEG/{scan_id}-Wrkmem/4D/c,rfDC",
+  "results_subdir": "meg_native_contrast_maps",
+  "map_metrics_subdir": "divcurl_maps_level1",
+  "level1_subdir": "level1_scan",
+  "participant_subdir": "level1_participant",
+  "group_subdir": "group_level2",
+  "official_decoder": "trialfun_Wrkmem_BaseExtractAll.m",
+  "frame_interval_seconds": 0.02,
+  "min_block_coverage_fraction": 0.5,
+  "expected_blocks_per_condition_per_scan": 8,
+  "include_unlabeled_intervals_as_intercept": true,
+  "divcurl": {
+    "filt_sigma": 3,
+    "do_zscore": true,
+    "do_binarize": true,
+    "n_std": 2,
+    "size_threshold": 10,
+    "save_maps": true
+  },
+  "pattern_names": [
+    "Source",
+    "Sink",
+    "CCVortex",
+    "CVortex"
+  ],
+  "contrasts": [
+    {
+      "name": "2-back_vs_0-back",
+      "first_code": 2,
+      "second_code": 1
+    },
+    {
+      "name": "2-back_vs_fixation",
+      "first_code": 2,
+      "second_code": 3
+    },
+    {
+      "name": "0-back_vs_fixation",
+      "first_code": 1,
+      "second_code": 3
+    }
+  ],
+  "contrast_vector": [
+    0,
+    1,
+    -1
+  ],
+  "level1_solver": "gls_ar1",
+  "segment_aware": true,
+  "scan_aggregation": "equal_weight_mean_scan6_scan7",
+  "group_include_complete_participants_only": true,
+  "level2_formula": "group_mean/(group_sd+eps)",
+  "min_subjects_for_map": 3,
+  "significance_map": false,
+  "figure": {
+    "renderer": "imagesc_brainimg",
+    "layout": "rows=contrasts, columns=motifs",
+    "cohens_d_display_limit": 0.5,
+    "export_dpi": 300
+  },
+  "subject_manifest_env": "COF_MEG_SUBJECT_MANIFEST"
+}

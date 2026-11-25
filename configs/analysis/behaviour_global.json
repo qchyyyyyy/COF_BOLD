@@ -1,0 +1,10 @@
+{
+  "participants_csv": "../../data/behaviour/participants.csv",
+  "family_csv": "../../data/family_metadata.csv",
+  "motion_root": "../../data/motion",
+  "output_dir": "../../../private_outputs/behaviour_global",
+  "expected_n": 1025,
+  "minimum_matched_n": 101,
+  "radius_mm": 50,
+  "feature_frames": 404
+}

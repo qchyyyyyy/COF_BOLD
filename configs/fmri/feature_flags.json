@@ -1,0 +1,10 @@
+{
+  "do_pattern_quantity_global": true,
+  "do_pattern_quantity_region": false,
+  "do_pattern_size_global": true,
+  "do_pattern_size_region": false,
+  "do_pattern_voxel": true,
+  "do_order_param_global": true,
+  "do_order_param_region": false,
+  "do_order_param_voxel": true
+}

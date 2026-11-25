@@ -1,0 +1,8 @@
+{
+  "coordinate_file": "/path/to/external/templates/coordinate_cii_v2.mat",
+  "hist_real_file": "/path/to/original/TC_mesh_r_f_zscore.mat",
+  "hist_surrogate_2D_file": "/path/to/original/TC_surrogate_2D.mat",
+  "density_lh_file": "",
+  "density_rh_file": "",
+  "output_dir": "results/ed4_historical_replay"
+}

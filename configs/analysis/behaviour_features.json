@@ -1,0 +1,15 @@
+{
+  "participants_csv": "../../../private_outputs/behaviour_global/participants_with_fd.csv",
+  "coordinate_file": "../../data/templates/coordinate_cii_v2.mat",
+  "subject_list_file": "../../data/task/tfMRI_WM_LR/group/tfMRI_WM_LR_SubList.mat",
+  "density_mat": "../../data/behaviour/tfMRI_WM_LR_numPattern-block_voxel_LR_COF_old.mat",
+  "output_dir": "../../../private_outputs/behaviour_features",
+  "expected_locations": 45990,
+  "mask_sha256": "d59963b470c03692ae773de7ea69792cfdd4415e322d105e45326310590f87eb",
+  "feature_sha256": {
+    "SourceMap_0B": "63e60bd14462b41ab0cad512bbaf3b0ccd9563a45123c024d14d882c5b92c352",
+    "SinkMap_0B": "84aafa8a309515c071814375585a2736db6e00d7536d60a97f7e596b0a84b950",
+    "SourceMap_2B": "0c11ba35d7c42c115cc33ed9c2278eb236142ca5841dbde13959c09d182a6474",
+    "SinkMap_2B": "479361962072da51c52e8d9fa7808524027209730e442ad21cee2ddc29729911"
+  }
+}
