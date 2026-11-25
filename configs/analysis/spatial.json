@@ -1,0 +1,6 @@
+{
+  "prepared_maps_npz": "../../../private_outputs/spatial_prepared/prepared_maps.npz",
+  "seed": 20261150,
+  "n_spins": 9999,
+  "output_dir": "../../../private_outputs/spatial"
+}

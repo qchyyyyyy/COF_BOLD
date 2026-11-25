@@ -1,0 +1,19 @@
+{
+  "dataRoot": "REPLACE_ABSOLUTE_DATA_ROOT",
+  "resultsRoot": "REPLACE_ABSOLUTE_RESULTS_ROOT",
+  "method": "COF",
+  "hemisphere": "LR",
+  "excludedRows": {
+    "ZIB": [
+      19
+    ],
+    "ds000115": [
+      31
+    ]
+  },
+  "save_plot_inputs": false,
+  "dataset": "ds000115",
+  "output_dir": "REPLACE_NEW_ABSOLUTE_EXTERNAL_OUTPUT",
+  "disorganization_table": "REPLACE_FROZEN_HISTORICAL_SUBJECT_TABLE.csv",
+  "allow_historical_positional_input": true
+}

@@ -1,0 +1,13 @@
+function summary = meg_bold_group_maps(configFile)
+%MEG_BOLD_GROUP_MAPS Strict 83-participant Level-2 aggregation.
+% The shared implementation reads experiment-specific paths from config.
+summary = meg_group_contrast_maps(configFile);
+cfg = jsondecode(fileread(configFile));
+if summary.subject_count ~= double(cfg.expected_subjects) || ...
+        summary.min_subjects_map ~= double(cfg.expected_subjects) || ...
+        summary.max_subjects_map ~= double(cfg.expected_subjects)
+    error('MEG:WorkflowStrictCohort', ...
+        'Level 2 requires exactly %d participants at every masked map value.', ...
+        double(cfg.expected_subjects));
+end
+end

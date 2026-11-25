@@ -1,0 +1,2 @@
+# Preserve snapshot bytes so SOURCE_MANIFEST verifies after Git checkout.
+* -text

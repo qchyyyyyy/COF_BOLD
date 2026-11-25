@@ -1,0 +1,185 @@
+{
+  "output_dir": "../../../private_outputs/rnn",
+  "seed": 20261146,
+  "bootstrap": 10000,
+  "regression_bootstrap": 2000,
+  "input": {
+    "sha256": "8af8aac630400d0a2e6d0f69740a1f2302e8a31f4889c9692f0cb215284324ee",
+    "rows": 10340,
+    "unique_subjects": 56,
+    "path": "../../data/rnn/perturbation_trials.csv"
+  },
+  "scaling": {
+    "inputs": [
+      {
+        "path": "../../data/rnn/scaling/baseline_1024_numPattern_global.mat",
+        "size": 1024,
+        "metric": "PQ",
+        "sha256": "dceace6babcf84aa2b7225088d6c22596ae4c64f03bba3c12ecef9f4918db73a",
+        "shape": [
+          190,
+          3,
+          3,
+          100
+        ]
+      },
+      {
+        "path": "../../data/rnn/scaling/baseline_1024_sizePattern_global.mat",
+        "size": 1024,
+        "metric": "PS",
+        "sha256": "479deba27e8713d29180edea676196ea135e0e546c6a8cd619a1d523e27bd568",
+        "shape": [
+          190,
+          3,
+          3,
+          100
+        ]
+      },
+      {
+        "path": "../../data/rnn/scaling/baseline_1296_numPattern_global.mat",
+        "size": 1296,
+        "metric": "PQ",
+        "sha256": "5e5f654e7e346f2e2defd02a5d744a760a8524e0149dd89ac26e9ef20bec21f5",
+        "shape": [
+          190,
+          3,
+          3,
+          100
+        ]
+      },
+      {
+        "path": "../../data/rnn/scaling/baseline_1296_sizePattern_global.mat",
+        "size": 1296,
+        "metric": "PS",
+        "sha256": "e2f2a1cc331001711055793cf095f47987f395375f07ee4ebc53f03f081891b3",
+        "shape": [
+          190,
+          3,
+          3,
+          100
+        ]
+      },
+      {
+        "path": "../../data/rnn/scaling/baseline_144_numPattern_global.mat",
+        "size": 144,
+        "metric": "PQ",
+        "sha256": "009722d4ebb9c74ed11d71aad042cc3037f94bdc2f92fc2a9191c1d88989d914",
+        "shape": [
+          190,
+          3,
+          3,
+          100
+        ]
+      },
+      {
+        "path": "../../data/rnn/scaling/baseline_144_sizePattern_global.mat",
+        "size": 144,
+        "metric": "PS",
+        "sha256": "999a162d60dcd2fe32476cca452ef1b878cdc379dbb160b97d659806f30dbaa8",
+        "shape": [
+          190,
+          3,
+          3,
+          100
+        ]
+      },
+      {
+        "path": "../../data/rnn/scaling/baseline_256_numPattern_global.mat",
+        "size": 256,
+        "metric": "PQ",
+        "sha256": "31c33ce9db4d66efd35940324664f7fa7790ac3bec70722b8b2a5854026c51e8",
+        "shape": [
+          190,
+          3,
+          3,
+          100
+        ]
+      },
+      {
+        "path": "../../data/rnn/scaling/baseline_256_sizePattern_global.mat",
+        "size": 256,
+        "metric": "PS",
+        "sha256": "ed9899c3396e0eabccb06ad28cf1b3554cd0b23c4fdbd031c0a980d5624b3165",
+        "shape": [
+          190,
+          3,
+          3,
+          100
+        ]
+      },
+      {
+        "path": "../../data/rnn/scaling/baseline_400_numPattern_global.mat",
+        "size": 400,
+        "metric": "PQ",
+        "sha256": "70f7e728e132ce7f5002f462b4d71de852355de1f936ff543f6fec874c04083c",
+        "shape": [
+          190,
+          3,
+          3,
+          100
+        ]
+      },
+      {
+        "path": "../../data/rnn/scaling/baseline_400_sizePattern_global.mat",
+        "size": 400,
+        "metric": "PS",
+        "sha256": "5eacc0283361826efa8222f745ce7b6962bbc136924d9b19b69c51236a0963c3",
+        "shape": [
+          190,
+          3,
+          3,
+          100
+        ]
+      },
+      {
+        "path": "../../data/rnn/scaling/baseline_576_numPattern_global.mat",
+        "size": 576,
+        "metric": "PQ",
+        "sha256": "fa5897264a23bac11a5182822501397fb786e7fe47144306bd320603b0a419f1",
+        "shape": [
+          190,
+          3,
+          3,
+          100
+        ]
+      },
+      {
+        "path": "../../data/rnn/scaling/baseline_576_sizePattern_global.mat",
+        "size": 576,
+        "metric": "PS",
+        "sha256": "7e4e1db33ac4608c5417e78ed4585469c77820f07f541cb58b14116587eba45b",
+        "shape": [
+          190,
+          3,
+          3,
+          100
+        ]
+      },
+      {
+        "path": "../../data/rnn/scaling/baseline_784_numPattern_global.mat",
+        "size": 784,
+        "metric": "PQ",
+        "sha256": "072ad9bb096fa97c7f77b657c1f8c55a80d8ed88b1e8e757e663a5c43f926492",
+        "shape": [
+          190,
+          3,
+          3,
+          100
+        ]
+      },
+      {
+        "path": "../../data/rnn/scaling/baseline_784_sizePattern_global.mat",
+        "size": 784,
+        "metric": "PS",
+        "sha256": "a338eeff6628ee0f9b60fb40cf024015762130cab202eeb017258f9c84a15e73",
+        "shape": [
+          190,
+          3,
+          3,
+          100
+        ]
+      }
+    ]
+  },
+  "expected_scaling_tests": 14
+}

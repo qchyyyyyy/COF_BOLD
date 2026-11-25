@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "workflow": "meg_bold",
+  "processed_root_env": "COF_MEG_PROCESSED_ROOT",
+  "processed_root": "",
+  "results_root_env": "COF_MEG_RESULTS_ROOT",
+  "results_root": "",
+  "raw_root_env": "COF_MEG_RAW_ROOT",
+  "raw_root": "",
+  "fieldtrip_root_env": "FIELDTRIP_ROOT",
+  "fieldtrip_root": "",
+  "megconnectome_root_env": "MEGCONNECTOME_ROOT",
+  "megconnectome_root": "",
+  "spm_root_env": "SPM_ROOT",
+  "spm_root": "",
+  "coordinate_file_env": "COF_MEG_COORDINATE_FILE",
+  "coordinate_file": "",
+  "source_subdirs": [
+    "srcsessionlcmv_power_exp003",
+    "srcsessionlcmv_power"
+  ],
+  "source_output_name_template": "{subject_id}_MEG_{scan_id}-Wrkmem_task_scan_sessionlcmv_fixedori_power_dt20ms",
+  "derived_subdir": "meg_bold",
+  "results_subdir": "meg_bold",
+  "fmri_condition_table_env": "COF_MEG_BOLD_FMRI_CONDITION_TABLE",
+  "fmri_condition_table": "",
+  "fmri_motif_table_env": "COF_MEG_BOLD_FMRI_MOTIF_TABLE",
+  "fmri_motif_table": "",
+  "scan_ids": [
+    "6",
+    "7"
+  ],
+  "native_dt_seconds": 0.02,
+  "output_tr_seconds": 0.72,
+  "hrf_parameters": [
+    6,
+    16,
+    1,
+    1,
+    6,
+    0,
+    32
+  ],
+  "maximum_imputed_hrf_mass": 0.1,
+  "highpass_seconds": 128,
+  "wiener_lambda": 0.2,
+  "lowpass_hz": 0.25,
+  "source_block_size": 128,
+  "mesh_time_block_size": 64,
+  "cof_time_block_frames": 200,
+  "cof": {
+    "branches": [
+      "exact_project1"
+    ],
+    "locked": {
+      "name": "bold_rho5em4_tau1em8_sigma1",
+      "rho": 0.0005,
+      "tau": 1e-08,
+      "sigma": 1
+    }
+  },
+  "metrics": {
+    "filt_sigma": 3,
+    "do_zscore": true,
+    "do_binarize": true,
+    "n_std": 2,
+    "size_threshold": 10,
+    "save_maps_for_cross_modal": true
+  },
+  "inference": {
+    "signflip_permutations": 10000,
+    "bootstrap_samples": 10000,
+    "seed": 20260910,
+    "minimum_cross_modal_n": 30,
+    "expected_subject_count": 83,
+    "required_scan_ids": [
+      "6",
+      "7"
+    ],
+    "require_complete_cohort": true
+  },
+  "allow_existing_output": true
+}

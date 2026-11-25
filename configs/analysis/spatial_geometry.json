@@ -1,0 +1,4 @@
+{
+  "templates_root": "../../data/templates",
+  "output_dir": "../../../private_outputs/spatial_geometry"
+}

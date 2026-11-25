@@ -1,0 +1,5 @@
+{
+  "groupDir": "/external/hcp/wm/group",
+  "behaviorCsv": "/external/hcp/behaviour.csv",
+  "outputDir": "/external/derived/behaviour/group_profiles"
+}

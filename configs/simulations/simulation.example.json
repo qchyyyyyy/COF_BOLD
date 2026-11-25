@@ -1,0 +1,5 @@
+{
+  "kind": "packet",
+  "seed": 3,
+  "outputFile": "/path/to/versioned-output/packet.mat"
+}

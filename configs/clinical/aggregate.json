@@ -1,0 +1,23 @@
+{
+  "subject_ids": [
+    "SYNTHETIC_EXAMPLE_A",
+    "SYNTHETIC_EXAMPLE_B"
+  ],
+  "frames_per_run": 475,
+  "output_dir": "REPLACE_NEW_ABSOLUTE_EXTERNAL_OUTPUT",
+  "output_name": "numPattern_global_LR_COF.mat",
+  "run_dirs": [
+    [
+      "REPLACE_A0_DIR",
+      "REPLACE_A1_DIR",
+      "REPLACE_A2_DIR"
+    ],
+    [
+      "REPLACE_B0_DIR",
+      "REPLACE_B1_DIR",
+      "REPLACE_B2_DIR"
+    ]
+  ],
+  "template_root": "REPLACE_ABSOLUTE_TEMPLATE_ROOT",
+  "method": "COF"
+}

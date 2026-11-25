@@ -1,0 +1,5 @@
+{
+  "groupDir": "/external/hcp/wm/group",
+  "behaviourCsv": "/external/hcp/behaviour.csv",
+  "outputDir": "/external/derived/behaviour/metric_models"
+}

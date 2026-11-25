@@ -1,0 +1,134 @@
+{
+  "input_root": "../../data/task",
+  "family_csv": "../../data/family_metadata.csv",
+  "output_dir": "../../../private_outputs/task",
+  "seed": 20261119,
+  "bootstrap_samples": 10000,
+  "expected_tests": 102,
+  "window": {
+    "trim_first": 10,
+    "trim_last": 10,
+    "wm_expected_overlap_runs": 15,
+    "wm_expected_overlap_frames": 15
+  },
+  "tasks": [
+    {
+      "key": "WM",
+      "n": 1083,
+      "t": 404,
+      "control": "0-back",
+      "task": "2-back",
+      "metrics": [
+        "PQ_diverging",
+        "PQ_converging",
+        "PQ_cc_spiral",
+        "PQ_c_spiral",
+        "PS_diverging",
+        "PS_converging",
+        "PS_cc_spiral",
+        "PS_c_spiral",
+        "OP"
+      ],
+      "ev_names": [
+        "0bk_body",
+        "0bk_faces",
+        "0bk_places",
+        "0bk_tools",
+        "2bk_body",
+        "2bk_faces",
+        "2bk_places",
+        "2bk_tools"
+      ]
+    },
+    {
+      "key": "EMOTION",
+      "n": 1043,
+      "t": 175,
+      "control": "shapes",
+      "task": "faces",
+      "ev_names": [
+        "fear",
+        "neut"
+      ],
+      "metrics": [
+        "PQ_diverging",
+        "PQ_converging",
+        "PS_diverging",
+        "PS_converging",
+        "OP"
+      ]
+    },
+    {
+      "key": "GAMBLING",
+      "n": 1084,
+      "t": 252,
+      "control": "loss",
+      "task": "win",
+      "ev_names": [
+        "win",
+        "loss"
+      ],
+      "metrics": [
+        "PQ_diverging",
+        "PQ_converging",
+        "PS_diverging",
+        "PS_converging",
+        "OP"
+      ]
+    },
+    {
+      "key": "LANGUAGE",
+      "n": 1050,
+      "t": 315,
+      "control": "math",
+      "task": "story",
+      "ev_names": [
+        "story",
+        "math"
+      ],
+      "metrics": [
+        "PQ_diverging",
+        "PQ_converging",
+        "PS_diverging",
+        "PS_converging",
+        "OP"
+      ]
+    },
+    {
+      "key": "RELATIONAL",
+      "n": 1042,
+      "t": 231,
+      "control": "match",
+      "task": "relation",
+      "ev_names": [
+        "relation",
+        "match"
+      ],
+      "metrics": [
+        "PQ_diverging",
+        "PQ_converging",
+        "PS_diverging",
+        "PS_converging",
+        "OP"
+      ]
+    },
+    {
+      "key": "SOCIAL",
+      "n": 1050,
+      "t": 273,
+      "control": "random",
+      "task": "mental",
+      "ev_names": [
+        "mental",
+        "rnd"
+      ],
+      "metrics": [
+        "PQ_diverging",
+        "PQ_converging",
+        "PS_diverging",
+        "PS_converging",
+        "OP"
+      ]
+    }
+  ]
+}

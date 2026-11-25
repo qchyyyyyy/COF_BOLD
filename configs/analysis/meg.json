@@ -1,0 +1,25 @@
+{
+  "output_dir": "../../../private_outputs/meg",
+  "native_participants_csv": "../../data/meg/native/block_participant_means.csv",
+  "native_bootstrap_csv": "../../data/meg/native/block_pairwise.csv",
+  "boldlike_participants_csv": "../../../private_outputs/meg_aggregate/condition_participant.csv",
+  "native_curves_csv": "../../data/meg/native/trial_time_participant_means.csv",
+  "expected_n": 83,
+  "inference": {
+    "seed": 20260910,
+    "signflip_permutations": 10000,
+    "bootstrap_samples": 10000
+  },
+  "spatial": [
+    {
+      "name": "native",
+      "participant_files_csv": "../../data/meg/native/spatial_participants.csv",
+      "expected_n": 68
+    },
+    {
+      "name": "boldlike",
+      "participant_files_csv": "../../data/meg/boldlike/spatial_participants.csv",
+      "expected_n": 83
+    }
+  ]
+}

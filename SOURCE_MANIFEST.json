@@ -1,0 +1,1647 @@
+{
+  "release": "project01-code-20261125-v2",
+  "scope": "Adopted manuscript computation and statistics",
+  "licences": "Author MIT; separately licensed dependencies under third_party",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 82,
+      "sha256": "ac217891cc65ccbc07c087c679f8cd16abd82dfd8d3a9637ba62a17e55c40869"
+    },
+    {
+      "path": ".github/workflows/tests.yml",
+      "bytes": 395,
+      "sha256": "74162bcc8a6b977f108f9b8d32c2321d721a7512b759547fe940b7bfbe34a80e"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 204,
+      "sha256": "f9da856e07b1ba52efaa93186875ae57e9f8ed9542ddacd8aab1884010b9d99d"
+    },
+    {
+      "path": "analysis/__init__.py",
+      "bytes": 54,
+      "sha256": "0af2a74be31de195482c4a87f4abf4d5c3656b2f471cdde0636c13bdd43499af"
+    },
+    {
+      "path": "analysis/__main__.py",
+      "bytes": 1197,
+      "sha256": "46e461fd7bbcdfa94ab1783eb68224c65a0a0ab5c61f2bca4b065ab65aad550b"
+    },
+    {
+      "path": "analysis/behaviour/__init__.py",
+      "bytes": 54,
+      "sha256": "0af2a74be31de195482c4a87f4abf4d5c3656b2f471cdde0636c13bdd43499af"
+    },
+    {
+      "path": "analysis/behaviour/global_associations.py",
+      "bytes": 5009,
+      "sha256": "48cf56cfcf83d9cf38316f54726440de23d9c892f3a6160f961bd9c943037acf"
+    },
+    {
+      "path": "analysis/behaviour/local_associations.py",
+      "bytes": 3459,
+      "sha256": "19a0ba3aeef8cf7bfd6d24ffacf2edc5be2cf8f144edc6ef5445ca8159d1414b"
+    },
+    {
+      "path": "analysis/behaviour/local_regression.py",
+      "bytes": 1764,
+      "sha256": "e6749919a666cb1cd42f61d35002c96839d64372d955a8807b096d78563e9807"
+    },
+    {
+      "path": "analysis/behaviour/motion.py",
+      "bytes": 549,
+      "sha256": "348bb8499bfa9585b51a01b69a0237a1fddc83de2b0b69614752d743d121ea68"
+    },
+    {
+      "path": "analysis/behaviour/prepare_density.py",
+      "bytes": 2286,
+      "sha256": "9153f28aa8f8fe9656f071e9b2aaaa2bc111422a817daa4af8acb9edde877690"
+    },
+    {
+      "path": "analysis/common/__init__.py",
+      "bytes": 54,
+      "sha256": "0af2a74be31de195482c4a87f4abf4d5c3656b2f471cdde0636c13bdd43499af"
+    },
+    {
+      "path": "analysis/common/family.py",
+      "bytes": 5523,
+      "sha256": "1812076f545fce284ff23f56538a100ae7bc9a1bfceac1798caf0188fe0e7787"
+    },
+    {
+      "path": "analysis/common/io.py",
+      "bytes": 4360,
+      "sha256": "a90413ab2c046e4d64f93b8cde9f01114cb0d2a2230f56af1ab6fb176741062f"
+    },
+    {
+      "path": "analysis/common/matlab.py",
+      "bytes": 2465,
+      "sha256": "378aaad911fdc41f62070ab883ce2b432cfc58b145075dae3b01815340149ce2"
+    },
+    {
+      "path": "analysis/common/multiple_testing.py",
+      "bytes": 620,
+      "sha256": "f296ac55541ab286829c18f57abb800211b472269a582b4434a50b0e140a898d"
+    },
+    {
+      "path": "analysis/common/regression.py",
+      "bytes": 1549,
+      "sha256": "8116141f0e3200751cd24cd2d0c0f9319abd2333840ed0041764d54f404c8ac1"
+    },
+    {
+      "path": "analysis/meg/__init__.py",
+      "bytes": 54,
+      "sha256": "0af2a74be31de195482c4a87f4abf4d5c3656b2f471cdde0636c13bdd43499af"
+    },
+    {
+      "path": "analysis/meg/aggregate.py",
+      "bytes": 3765,
+      "sha256": "7df0ec179fdae0e03536b0d053af792786faea4ce76c41640995968605a9064e"
+    },
+    {
+      "path": "analysis/meg/inference.py",
+      "bytes": 10539,
+      "sha256": "e9b29790503edf92c126ed0643a612d5476a495a741d04a0b68229a704815069"
+    },
+    {
+      "path": "analysis/meg/paired.py",
+      "bytes": 2940,
+      "sha256": "316b55a78280d27620751efb133518bf95a17aa62a4f1ccd7b7f546385df4be6"
+    },
+    {
+      "path": "analysis/rnn/__init__.py",
+      "bytes": 54,
+      "sha256": "0af2a74be31de195482c4a87f4abf4d5c3656b2f471cdde0636c13bdd43499af"
+    },
+    {
+      "path": "analysis/rnn/inference.py",
+      "bytes": 4813,
+      "sha256": "8da820421f60d11b6567a9127e152641b8885b374154d5622218f298cb5e31b5"
+    },
+    {
+      "path": "analysis/rnn/models.py",
+      "bytes": 2590,
+      "sha256": "de8ff2b954b731aaf90bd9864643e20dd160d56e7a92089fb34c9686ade593e7"
+    },
+    {
+      "path": "analysis/spatial/__init__.py",
+      "bytes": 54,
+      "sha256": "0af2a74be31de195482c4a87f4abf4d5c3656b2f471cdde0636c13bdd43499af"
+    },
+    {
+      "path": "analysis/spatial/geometry.py",
+      "bytes": 7649,
+      "sha256": "0f25ab68f66dbfcfb98b481174b878ef6d575055c6924effadffef0ecd324415"
+    },
+    {
+      "path": "analysis/spatial/inference.py",
+      "bytes": 3252,
+      "sha256": "d9a7f91d3b26f70f12223d088b5691622fb827d417181464b77f920947be14cd"
+    },
+    {
+      "path": "analysis/spatial/operators.py",
+      "bytes": 2373,
+      "sha256": "86fd3da76a823d5dd24e5028c786f229a7d053a7740cbaa8001caa7c2f523387"
+    },
+    {
+      "path": "analysis/spatial/prepare_maps.py",
+      "bytes": 5361,
+      "sha256": "e660fca643e03784d156dbc0fb6b8686a1f3f23353ff395f284ca096ac51975b"
+    },
+    {
+      "path": "analysis/task/__init__.py",
+      "bytes": 54,
+      "sha256": "0af2a74be31de195482c4a87f4abf4d5c3656b2f471cdde0636c13bdd43499af"
+    },
+    {
+      "path": "analysis/task/inference.py",
+      "bytes": 4286,
+      "sha256": "88e16069f08749363f42738f1a8b42c8cb71a83f47eecb45fd5f97b132430679"
+    },
+    {
+      "path": "analysis/task/inputs.py",
+      "bytes": 5175,
+      "sha256": "fb837f31c37a835d73a4066e71991e800c50af12bc05e634cba8b5418beab1f0"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 990,
+      "sha256": "c98f1bf89032feffe03871a86e66bb0015d07b4876f27686f933d4ea8d4dd941"
+    },
+    {
+      "path": "configs/analysis/behaviour_features.json",
+      "bytes": 905,
+      "sha256": "39b1f30e27b45487e566bfae90dee3ce1361e413479ba8e0db7039e839d47d90"
+    },
+    {
+      "path": "configs/analysis/behaviour_global.json",
+      "bytes": 319,
+      "sha256": "cb6f7565215f4e8a920e6c69f70876d41f73f3e519f19113c02c93e24cd021ce"
+    },
+    {
+      "path": "configs/analysis/behaviour_local.json",
+      "bytes": 846,
+      "sha256": "bbab3a21497953dbb18ecdc3d8ff3c36e8b1f05fc941addb4a2c20025c4dda85"
+    },
+    {
+      "path": "configs/analysis/meg.json",
+      "bytes": 844,
+      "sha256": "8ae1efe5e5c031b3ed2393b08c2953639877b656f46b2fdce74782c99bfaf2b1"
+    },
+    {
+      "path": "configs/analysis/meg_aggregate.json",
+      "bytes": 192,
+      "sha256": "5d883b26189553969f6499fddf7acfada674b3b4fc0ccb6760dceb7a73167355"
+    },
+    {
+      "path": "configs/analysis/rnn.json",
+      "bytes": 4923,
+      "sha256": "b3b23880848794db378d268a967281884aaa68d42cfbd5ea37c1cd5db186042c"
+    },
+    {
+      "path": "configs/analysis/spatial.json",
+      "bytes": 186,
+      "sha256": "02efb2676bb7f1fdf1634694c9c31b9a6cf6223f2a505287235e70c99b76c12c"
+    },
+    {
+      "path": "configs/analysis/spatial_geometry.json",
+      "bytes": 112,
+      "sha256": "7dcdfcb5bd71f0e87ab7b4791defb457c1d226c0657b4d511178bd185eddb3dc"
+    },
+    {
+      "path": "configs/analysis/spatial_prepare.json",
+      "bytes": 429,
+      "sha256": "d53cbae8f6df0efbee25f2337af868b95f0f03f23b48431e6c0add8193a71f17"
+    },
+    {
+      "path": "configs/analysis/task.json",
+      "bytes": 2639,
+      "sha256": "66ad151ef1cb0103c0673203cfa390a4c7102bb792cc8e521ebe1337744ac974"
+    },
+    {
+      "path": "configs/behaviour/export.example.json",
+      "bytes": 260,
+      "sha256": "0a417ba11068a96c3faf9b01e17a0d3ce1d4a6b1ebb35341908516352ce7b774"
+    },
+    {
+      "path": "configs/behaviour/group_profiles.example.json",
+      "bytes": 152,
+      "sha256": "d40486c3d194c4010040c0fb0b3857adc2a1ff0cbf3bd28efb0b0ae6680c3d2a"
+    },
+    {
+      "path": "configs/behaviour/historical_input_hashes.json",
+      "bytes": 1086,
+      "sha256": "7f4529ca118bc2f322990aeccb3fd1e3df292e44084c7cae5873daba4394eb58"
+    },
+    {
+      "path": "configs/behaviour/metric_models.example.json",
+      "bytes": 152,
+      "sha256": "629f31b0513a841a4bf535b5a0a6b6a88505dba911aa3bc775fef65c844a5c25"
+    },
+    {
+      "path": "configs/clinical/aggregate.json",
+      "bytes": 493,
+      "sha256": "324dd3626d8ce22557c4755cfb437ed1ff8201b97f2030fa2f51155e27d101fd"
+    },
+    {
+      "path": "configs/clinical/compute_ds000115.json",
+      "bytes": 363,
+      "sha256": "629f4cc6a4ff3148433e652976bfe684ee31c7f6a8f0ce68b14d739267ab2b16"
+    },
+    {
+      "path": "configs/clinical/compute_zib.json",
+      "bytes": 363,
+      "sha256": "1b09f95edbc91e900403f06c18d2a0f74c1ea053a8fe9f899c77f2e5349378c9"
+    },
+    {
+      "path": "configs/clinical/ds000115.json",
+      "bytes": 473,
+      "sha256": "b0e9bafe016ecec8c17c55ae45a9ccabfe26f317e3d0f70364c54721982fc4c0"
+    },
+    {
+      "path": "configs/clinical/zib.json",
+      "bytes": 393,
+      "sha256": "80743cd75892f1431082d896f8311b161efda03aec9f0abca2b99d0822633299"
+    },
+    {
+      "path": "configs/extended_data/surrogates.example.json",
+      "bytes": 309,
+      "sha256": "59643cce8577143086b9c3285d05fb00e4b2d52f3593b9226eb64704abb83e4f"
+    },
+    {
+      "path": "configs/fmri/feature_flags.json",
+      "bytes": 276,
+      "sha256": "efd981a43ead59e672a5a6b5baf3170535a840ce0b7a29244a35a431aa43cee2"
+    },
+    {
+      "path": "configs/fmri/preprocess.example.json",
+      "bytes": 583,
+      "sha256": "685381a940211de8719018d120f294b5c76f10918fbbed4eaa60a03dc27f05b7"
+    },
+    {
+      "path": "configs/meg/bold.example.json",
+      "bytes": 2000,
+      "sha256": "d47aecc69423e1a605e8318b71531a9ca3c7bcaa9be338700fa06272d6ac0ecb"
+    },
+    {
+      "path": "configs/meg/bold_contrast_maps.example.json",
+      "bytes": 2013,
+      "sha256": "b10d9b89740b3fbdead996158b3b4355b90791feee0738adc09711ab7293783c"
+    },
+    {
+      "path": "configs/meg/native_conditions.example.json",
+      "bytes": 1298,
+      "sha256": "4caabb4dcafa118828a22e8155276eb92edc345a32dd81d86e355239c50193c2"
+    },
+    {
+      "path": "configs/meg/native_contrast_maps.example.json",
+      "bytes": 2442,
+      "sha256": "77fba635fe22bbdd8ab43eeda0cdf46b38d70db0c9aca63993214bce987f88fb"
+    },
+    {
+      "path": "configs/meg/native_trial_curves.example.json",
+      "bytes": 1288,
+      "sha256": "5d2f3d10b73a1a42c56e10c686c0a16b78af7ce15785547d33c94b4e81afff69"
+    },
+    {
+      "path": "configs/rest/preprocess.example.json",
+      "bytes": 562,
+      "sha256": "f260a91167880a79e90c9ca95815fd1bde508d2edb80c8370fa4dde27be436fe"
+    },
+    {
+      "path": "configs/rnn/perturbations.example.json",
+      "bytes": 201,
+      "sha256": "d4696b98ca6c73cea834cd7932e44f1de8bc516ddb7a4896025cb733769cb6a2"
+    },
+    {
+      "path": "configs/rnn/scaling.example.json",
+      "bytes": 3918,
+      "sha256": "d23af17e4fd2b73995a018b029fbecdb9243cb387fc252c5088032fc5e40ce14"
+    },
+    {
+      "path": "configs/rnn/summary.example.json",
+      "bytes": 1351,
+      "sha256": "86988b624ed6b011482f78d0031e09d56f0cb29db3e37d785f4deded9c0fb553"
+    },
+    {
+      "path": "configs/simulations/simulation.example.json",
+      "bytes": 92,
+      "sha256": "dd042bb156883e697721cb7d70a180de65a2d0bbe1ccf2b9a60bff7b3ee7353d"
+    },
+    {
+      "path": "docs/CLINICAL.md",
+      "bytes": 5368,
+      "sha256": "6b52b0d8c85a3584fa4764ef6965957a0ca1a0566791f401eed8a923ccbb0353"
+    },
+    {
+      "path": "docs/COMPUTATION.md",
+      "bytes": 12860,
+      "sha256": "b0bf7c7d58628ef611883f0ba966387cba4ea5ba9091aba5e9e64d57505ed126"
+    },
+    {
+      "path": "docs/DATA.md",
+      "bytes": 1278,
+      "sha256": "f79618eb3108a0b2459d549c48872de3c1f778ea094dd930dae17701095145b0"
+    },
+    {
+      "path": "docs/DEPENDENCIES.md",
+      "bytes": 5361,
+      "sha256": "104e615ed8bbc895086eb6f677085386717d03f18e720d40a1e701bfb736c7e4"
+    },
+    {
+      "path": "docs/MANUSCRIPT_MAP.md",
+      "bytes": 2277,
+      "sha256": "5c138c60d736bd57967ad04ed78b81c30780aeb5319c816623af9f27f1a9bcc9"
+    },
+    {
+      "path": "docs/SOURCE_PROVENANCE.json",
+      "bytes": 59935,
+      "sha256": "9e8d57729ed6e3babdbf6ac7cd07a22893058077e1dbd1d9f0c7fbf1666ca52f"
+    },
+    {
+      "path": "docs/STATISTICS.md",
+      "bytes": 9095,
+      "sha256": "2d3345e93f4329aead0523d61fb3ce09d5a9ca934e07c24ebe2d5fa13e7e8e92"
+    },
+    {
+      "path": "docs/TEST_ENVIRONMENT.json",
+      "bytes": 379,
+      "sha256": "83f5e6d65c6e3da435b7b61e7688b2d1487fee67e634d8ffe37164e51edb89e8"
+    },
+    {
+      "path": "docs/VERIFICATION.md",
+      "bytes": 3834,
+      "sha256": "f618a10bbff52570e9c173cb98f3438474b9cf8ef6638ace4a68d9dcb6593417"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1177,
+      "sha256": "29bea811642d9898241821228ddff9c0d22ed95501f448ca16110cfcaa721e79"
+    },
+    {
+      "path": "matlab/core/features/count_motifs.m",
+      "bytes": 1020,
+      "sha256": "c5f7ab4e485c8926cfebad40521472d59cb7b46a704bd3720bb5b6b4b80cc439"
+    },
+    {
+      "path": "matlab/core/features/measure_motif_sizes.m",
+      "bytes": 970,
+      "sha256": "1bc779ae5b5ae568ce78ff7dead049d724f70bacec8086524a5da2a940422798"
+    },
+    {
+      "path": "matlab/core/features/track_motifs.m",
+      "bytes": 1808,
+      "sha256": "a6555d901f337504c228dfc838a9c37bf937a0b0a79f64dc61507345e93b666f"
+    },
+    {
+      "path": "matlab/core/features/velocity_derivatives.m",
+      "bytes": 2175,
+      "sha256": "3321e367fb3db1607ec5550ce8a1ec771f0b8b4626a8f930b4901050f6db10d1"
+    },
+    {
+      "path": "matlab/core/flow/cof_solve.m",
+      "bytes": 4605,
+      "sha256": "d8c6e2ffa3e1ba436378d033112ca22a494dcdfd96654b84a22840046ac00c63"
+    },
+    {
+      "path": "matlab/core/flow/estimate_velocity.m",
+      "bytes": 4372,
+      "sha256": "963b29ce288613be57b08d8e4ab8d7e1488a5431be21bfcda25352c21ea05863"
+    },
+    {
+      "path": "matlab/core/flow/extend_masked_movie.m",
+      "bytes": 3171,
+      "sha256": "13f2611173329922f089bb85ac4ecb9c708f9063a7f53e92c0c69353057f4e50"
+    },
+    {
+      "path": "matlab/core/flow/of_solve.m",
+      "bytes": 3182,
+      "sha256": "2d488e6fe46d288f963fb6a8a1f2fa706a6d68a6618d0fc2596ba5b3a850f521"
+    },
+    {
+      "path": "matlab/core/flow/phase_gradient.m",
+      "bytes": 533,
+      "sha256": "86bb7ffac6d068f98bb7a9d29f27fae3ee72512fd44e96fab3803a9e4170b7eb"
+    },
+    {
+      "path": "matlab/core/geometry/grid_to_vector.m",
+      "bytes": 111,
+      "sha256": "26f566c7a909e9a854b772a2a55802977c1f4a9cd29e83cca6b9e2acbfe6182e"
+    },
+    {
+      "path": "matlab/core/geometry/interpolate_to_grid.m",
+      "bytes": 617,
+      "sha256": "3ff7c46ed4bf6fcada9e39862fc240cf785a38e8a76d325c8991a7b53fca16a9"
+    },
+    {
+      "path": "matlab/core/geometry/load_cortical_atlas.m",
+      "bytes": 4024,
+      "sha256": "6c23f0e8c52549169bbb2b3aac015589acc046d241d153d63f70708f8b5de4cc"
+    },
+    {
+      "path": "matlab/core/geometry/reconstruct_velocity.m",
+      "bytes": 1654,
+      "sha256": "b3a2df1c3090795d4b69413e03c4ccc37710ba50c94fc7ea3089ded2370cf1a7"
+    },
+    {
+      "path": "matlab/core/geometry/reorder_participant_blocks.m",
+      "bytes": 1261,
+      "sha256": "7c35e248307d99e94aa92826a3fd05567033feb92693a168f81656916ec027b4"
+    },
+    {
+      "path": "matlab/core/geometry/vector_to_grid.m",
+      "bytes": 368,
+      "sha256": "c9377774766007eba317ed5930f75c9d37dd1e395db4ff2537c08eb42d5081da"
+    },
+    {
+      "path": "matlab/core/geometry/wrap_angle_difference.m",
+      "bytes": 288,
+      "sha256": "a8d5c72a0a6bc54ce98a31da949adaa509764fc4419151712fc7bdaba80a00a9"
+    },
+    {
+      "path": "matlab/core/io/repository_root.m",
+      "bytes": 354,
+      "sha256": "1a784ad7928ad42100000a6300ffaff1ab69f022a8403e7fd025889b025ac21d"
+    },
+    {
+      "path": "matlab/core/io/template_path.m",
+      "bytes": 436,
+      "sha256": "78d62bae7a75f124171eb6658874437ca622bee33f305731209ba08e859067a7"
+    },
+    {
+      "path": "matlab/core/io/write_plot_data.m",
+      "bytes": 623,
+      "sha256": "27e4d7b4d2143576bf3969a12ad72436e3bbaf4306e6bad1120a0b75d0ac41fd"
+    },
+    {
+      "path": "matlab/core/preprocessing/generate_surrogate.m",
+      "bytes": 3916,
+      "sha256": "fb607b4f3a75a10da98558df660ec34ecb5f5e2388248cc1a030cd0b385b0c5c"
+    },
+    {
+      "path": "matlab/core/preprocessing/preprocess_hcp.m",
+      "bytes": 8437,
+      "sha256": "87311d0952acc419339fcce048e4e8fa26eff1f0453d9cf8741617d2a3925730"
+    },
+    {
+      "path": "matlab/core/preprocessing/preprocess_rest.m",
+      "bytes": 4739,
+      "sha256": "ad39af8052255bc3df2cc7bddff2de6ce6a5a8cebf93445ddaebc5c02e5839d3"
+    },
+    {
+      "path": "matlab/core/preprocessing/preprocess_surrogate.m",
+      "bytes": 5745,
+      "sha256": "b1f837cb3ba756e5e398acb028be04974d57918b6be4760a7a19a96e571f59ff"
+    },
+    {
+      "path": "matlab/core/preprocessing/preprocess_task.m",
+      "bytes": 4355,
+      "sha256": "783a4802a9dc5388dd259b257c21a1e418f2cf18bba8ff765400a84b38b0532b"
+    },
+    {
+      "path": "matlab/core/statistics/adjust_fdr.m",
+      "bytes": 237,
+      "sha256": "e29279a36dce54372d1001e2606a9c9657ba0386f08d39b2d1c2840f914b9e7d"
+    },
+    {
+      "path": "matlab/core/statistics/circular_shift_test.m",
+      "bytes": 1040,
+      "sha256": "5a191306d81b689c0ec30430d9d350878a15a8ef0319728a4135158e39a60d11"
+    },
+    {
+      "path": "matlab/core/statistics/cluster_permutation_test.m",
+      "bytes": 6989,
+      "sha256": "93d2c1c98f43af0b4674ec9dadb7ab66c7a06c3e46317ef98a28ef40cc3bead0"
+    },
+    {
+      "path": "matlab/core/statistics/fit_gls_ar1.m",
+      "bytes": 1625,
+      "sha256": "88f464df23f80a586e4eabec17e023ef63ec5820853a25e8f871c83db745d804"
+    },
+    {
+      "path": "matlab/core/statistics/fit_vertex_glm.m",
+      "bytes": 211,
+      "sha256": "9d1bc386b09ae7f950ebcae0c1efe63cb65fe540e4fba339c901ff114d89a9dd"
+    },
+    {
+      "path": "matlab/core/statistics/permutation_ks_test.m",
+      "bytes": 2922,
+      "sha256": "4a2bd1444908ad6e1c303e0d67503064bcdb4a6a2d08b197b52835f041f0ce07"
+    },
+    {
+      "path": "matlab/core/statistics/permutation_mean_test.m",
+      "bytes": 2790,
+      "sha256": "1f67ab192ae791c09b877f511eff90915464c52c07bcef6720fd619e14d5cb1c"
+    },
+    {
+      "path": "matlab/workflows/behaviour/behaviour_export_inputs.m",
+      "bytes": 4528,
+      "sha256": "e357cbad64e6608a28ba32b456911dea7779711e38671a1f78846b7f67aadba1"
+    },
+    {
+      "path": "matlab/workflows/behaviour/behaviour_group_profiles.m",
+      "bytes": 13208,
+      "sha256": "53fae91c8ee35729ceff55cb79b507dbeb7d851cf773423e7bb4763150a26d5f"
+    },
+    {
+      "path": "matlab/workflows/behaviour/behaviour_load_metrics.m",
+      "bytes": 5433,
+      "sha256": "10760fd51d144232e50fa3dfa4e4d4bcc6a0072cf2bcbb8947f590323b35f4b6"
+    },
+    {
+      "path": "matlab/workflows/behaviour/behaviour_metric_models.m",
+      "bytes": 8383,
+      "sha256": "c288a38f6841dcfe4577072bbf6e39c928e0385da133b13a4eaf9439d6c11b52"
+    },
+    {
+      "path": "matlab/workflows/behaviour/behaviour_run_metric_models.m",
+      "bytes": 794,
+      "sha256": "e087f35f7948f90eff3aa18a4fe754603145f2a8b765dcbae447224c38ead61d"
+    },
+    {
+      "path": "matlab/workflows/behaviour/behaviour_subject_list.m",
+      "bytes": 562,
+      "sha256": "e5c00d38b1eb242c1240e51dc4422eddfd4ad5bfc7ce4fba83eb1cf0c473bc4c"
+    },
+    {
+      "path": "matlab/workflows/behaviour/behaviour_verify_inputs.m",
+      "bytes": 966,
+      "sha256": "c4c8271300ce50634cb624302a6cff725e3e8a870681801c59031dbd15571096"
+    },
+    {
+      "path": "matlab/workflows/clinical/clinical_aggregate_pq.m",
+      "bytes": 2491,
+      "sha256": "b177ade5137a668ed91383f60e763e3880ea0771d2b752c6761ebdf5e64965f7"
+    },
+    {
+      "path": "matlab/workflows/clinical/clinical_collect_cohort.m",
+      "bytes": 10361,
+      "sha256": "187221042659c233e9e66746994be38aef05c4acd7d74de5f0ea596b78ceb5fc"
+    },
+    {
+      "path": "matlab/workflows/clinical/clinical_compute.m",
+      "bytes": 1743,
+      "sha256": "745b5085bf02aa90c217fbe9325add635eb4c5672d8fc3772cbd2ff72f94fde6"
+    },
+    {
+      "path": "matlab/workflows/clinical/clinical_count_pq.m",
+      "bytes": 1596,
+      "sha256": "a25e971573d91e8141b3b58ef8e0e50c41a0462d06284bf2ca81566fec7e62dd"
+    },
+    {
+      "path": "matlab/workflows/clinical/clinical_disorganization_trend.m",
+      "bytes": 1697,
+      "sha256": "37296e4d5a928fc44bf555d0d49d78fa2efc3b697aa9ec2a218e00796e170d3a"
+    },
+    {
+      "path": "matlab/workflows/clinical/clinical_load_comparison.m",
+      "bytes": 857,
+      "sha256": "398454ef4c23d9b3735a42ff636ad3d23c079322503558f55a6c2d8a77cf693d"
+    },
+    {
+      "path": "matlab/workflows/clinical/clinical_output_directory.m",
+      "bytes": 662,
+      "sha256": "7a720e9d348d08e52a7163894561d7e7ee6ff1aa7f817244fd9d26df446e0a79"
+    },
+    {
+      "path": "matlab/workflows/clinical/clinical_quadrants.m",
+      "bytes": 919,
+      "sha256": "aceb802a5bd819b310f18c9f64be304da9bbcf047f83c1f8f6f550b9285e2351"
+    },
+    {
+      "path": "matlab/workflows/clinical/clinical_run.m",
+      "bytes": 1839,
+      "sha256": "9fbe9a47e710298c8e08400cdaa8082d65fc3bdd45bd569ecac3bbf03891b16f"
+    },
+    {
+      "path": "matlab/workflows/clinical/clinical_summarise.m",
+      "bytes": 3685,
+      "sha256": "1047cbfaf130f6031ed3c47333a6a8c3eda4246ee21626e6d3ec44380e439c6d"
+    },
+    {
+      "path": "matlab/workflows/extended_data/activation_correspondence.m",
+      "bytes": 2206,
+      "sha256": "eb285c7fe2fa64667d6dd830fa4c091579f4b9fa2d8042a045ae519fb7fbc6ac"
+    },
+    {
+      "path": "matlab/workflows/extended_data/surrogate_cof_solve.m",
+      "bytes": 3207,
+      "sha256": "0efec8dd7bbadeb2aafe4eb9ab48fb90098c38980b2d40a8ce1e4a37884c6760"
+    },
+    {
+      "path": "matlab/workflows/extended_data/surrogate_estimate_velocity.m",
+      "bytes": 2089,
+      "sha256": "448238cc6fc843e2d5ef2f827c498a13d2acdb360fa181767b76fb586cf29af6"
+    },
+    {
+      "path": "matlab/workflows/extended_data/surrogate_grid_to_vector.m",
+      "bytes": 119,
+      "sha256": "a616fc47a2961deaa0b72a5331fe7612d2aa9aadb868357be16468f7c5fe32dd"
+    },
+    {
+      "path": "matlab/workflows/extended_data/surrogate_historical_summary.m",
+      "bytes": 2913,
+      "sha256": "f04a44668083cba930f64deac249bfff3a3aec931cdf832d4ed6d44833f99ab5"
+    },
+    {
+      "path": "matlab/workflows/extended_data/surrogate_vector_to_grid.m",
+      "bytes": 366,
+      "sha256": "7924b6a65875493ac320959d78d840acc6d4c2db3295aad266717490bb1403c4"
+    },
+    {
+      "path": "matlab/workflows/extended_data/surrogate_velocity_derivatives.m",
+      "bytes": 1310,
+      "sha256": "26f10f4b775cf8fb6e2af50eea0dc23f275c51157ad761a5305f6629b004ab6e"
+    },
+    {
+      "path": "matlab/workflows/extended_data/task_activation_comparison.m",
+      "bytes": 1199,
+      "sha256": "6f99719ab65cbe7e2f106939cbb133e7ca689384191edae25789e52d9c5d73e9"
+    },
+    {
+      "path": "matlab/workflows/extended_data/task_condition_statistics.m",
+      "bytes": 2477,
+      "sha256": "9ef835413bd46959f40280a10cca7087208b9e764088bc32ff994563277852bb"
+    },
+    {
+      "path": "matlab/workflows/extended_data/task_spatial_statistics.m",
+      "bytes": 983,
+      "sha256": "3626529e8b12af47661c41f5986a4809730b99aba45379fefc3a93ad098fd13b"
+    },
+    {
+      "path": "matlab/workflows/fmri/fmri_bold_copes.m",
+      "bytes": 5878,
+      "sha256": "baffc935ae43de697fb66d7a18873ffec4850429170433dcd94bbcc9a47f7419"
+    },
+    {
+      "path": "matlab/workflows/fmri/fmri_development_events.m",
+      "bytes": 2789,
+      "sha256": "a33da8fd46f84403479307c671dea128974613dcd3e4dcc5cad5363eb2c9a590"
+    },
+    {
+      "path": "matlab/workflows/fmri/fmri_gambling_events.m",
+      "bytes": 2557,
+      "sha256": "828dd38feb673702f9c32a5c079a069653088fdd986e6487c4e42bf958215bd7"
+    },
+    {
+      "path": "matlab/workflows/fmri/fmri_task_events.m",
+      "bytes": 4820,
+      "sha256": "ebd0bcf4775742ef758f060aee0a7d495bb703fb5c130c8cc92332dcbbe405ac"
+    },
+    {
+      "path": "matlab/workflows/fmri/fmri_task_metrics.m",
+      "bytes": 41310,
+      "sha256": "bf0e3e7ed75e6268075c1309c4e86b66c1934bf248e9fedb7bda7c2da1bb37f9"
+    },
+    {
+      "path": "matlab/workflows/meg/meg_bold_config.m",
+      "bytes": 3742,
+      "sha256": "f8a0324944aaa8d73d53fadcccac134ed029c79fb5f835029e17e56a09dafc8f"
+    },
+    {
+      "path": "matlab/workflows/meg/meg_bold_contrast_maps.m",
+      "bytes": 14412,
+      "sha256": "dc9d1922f0d13c733197e4f89739e067f2069c41a1432114e1720ec628e6d1f9"
+    },
+    {
+      "path": "matlab/workflows/meg/meg_bold_export_metrics.m",
+      "bytes": 5062,
+      "sha256": "499d8794ec2a18423f11f272903f1cec7af8b4221350be8f9db22bef48147453"
+    },
+    {
+      "path": "matlab/workflows/meg/meg_bold_generate.m",
+      "bytes": 3244,
+      "sha256": "db0c9f7ecd03a4f38245a8d0471a8f0ed23f27c44552a37f9411176d77851363"
+    },
+    {
+      "path": "matlab/workflows/meg/meg_bold_group_maps.m",
+      "bytes": 652,
+      "sha256": "f3ee763f4df947ed7dfabf748f3d2f938f7fef27a610ce8e171fd3fe3b7a08b5"
+    },
+    {
+      "path": "matlab/workflows/meg/meg_bold_preprocess_source.m",
+      "bytes": 1584,
+      "sha256": "ec6b302d5053dfe05b42c1f463d3a2597a2e5724c584f44ecb4627a9b270587e"
+    },
+    {
+      "path": "matlab/workflows/meg/meg_bold_subject.m",
+      "bytes": 5294,
+      "sha256": "44331af6feadd830d4603b1e2aa73ff734b29fa46a07844b1dafc6dcc3499479"
+    },
+    {
+      "path": "matlab/workflows/meg/meg_bold_velocity.m",
+      "bytes": 13086,
+      "sha256": "0e3c2de4f19301e656978556566d6af3928acb2f7a97857a141e2563dd2f8e7c"
+    },
+    {
+      "path": "matlab/workflows/meg/meg_cof_solve.m",
+      "bytes": 3165,
+      "sha256": "d454665b47fbb21e51a6acc5ab43a44c149b0e990e9f96d6c3aa4d7212e46547"
+    },
+    {
+      "path": "matlab/workflows/meg/meg_count_motifs.m",
+      "bytes": 864,
+      "sha256": "b347103781758768c2ce2003d9226dfb1db5a49acc28d4fea849ba55968bc65c"
+    },
+    {
+      "path": "matlab/workflows/meg/meg_decode_events.m",
+      "bytes": 7565,
+      "sha256": "a7db6cdf532a7414cf2e76418861cada8cf5377030c6e46168bbdc5c541fe23f"
+    },
+    {
+      "path": "matlab/workflows/meg/meg_fit_streaming_gls.m",
+      "bytes": 19815,
+      "sha256": "be62aaa23d2e1bfdc51cb98ec2615a53ff4dcf44bb01d059841e0576cfc72403"
+    },
+    {
+      "path": "matlab/workflows/meg/meg_grid_zscore.m",
+      "bytes": 513,
+      "sha256": "8b10f26773438a38be2540b54230da8c8e586ed19736469fa2b9295ab9670c1b"
+    },
+    {
+      "path": "matlab/workflows/meg/meg_group_contrast_maps.m",
+      "bytes": 15133,
+      "sha256": "bb72d5231067f2af877b59f63f523659e828e2ed40cd9e04f4644de035720d82"
+    },
+    {
+      "path": "matlab/workflows/meg/meg_highpass.m",
+      "bytes": 829,
+      "sha256": "82b9fc3003e8403f07353b5453ee1e77130bf7c4235f8f3b1712713aad69f565"
+    },
+    {
+      "path": "matlab/workflows/meg/meg_hrf.m",
+      "bytes": 1053,
+      "sha256": "4a6536e4e06abe3ed3a5381f44ed3941e481731c3485a55c591057a9a0ffaf8a"
+    },
+    {
+      "path": "matlab/workflows/meg/meg_interpolate_hemisphere.m",
+      "bytes": 1588,
+      "sha256": "6c04eb46414ffd3307fc116e4675cbe9ac043a960fd7096060f6b0a37142a1d6"
+    },
+    {
+      "path": "matlab/workflows/meg/meg_load_power_session.m",
+      "bytes": 1413,
+      "sha256": "1892b4675712b4ce97731aad78bcdb0d1269bbbbb7bdbf063c7c967cdd28a1f0"
+    },
+    {
+      "path": "matlab/workflows/meg/meg_measure_motif_sizes.m",
+      "bytes": 695,
+      "sha256": "84d88974ab12ad1b6f1e46abe66586a4b08e500c821add4f338fbd6d95f9a18b"
+    },
+    {
+      "path": "matlab/workflows/meg/meg_native_conditions.m",
+      "bytes": 18823,
+      "sha256": "360e962fa9e9baf241eb0fbb24daab3eee7b68975a8ceb436cbe3543961eb3df"
+    },
+    {
+      "path": "matlab/workflows/meg/meg_native_contrast_maps.m",
+      "bytes": 24316,
+      "sha256": "b789304779c7161c1d2e2103a86b9d3988dae7eb2b720a0dc969eb810be64515"
+    },
+    {
+      "path": "matlab/workflows/meg/meg_native_group.m",
+      "bytes": 17512,
+      "sha256": "001f80b885f8892f64e4b126a8db955a35f156aca47cf9ba2c62a642980c5caa"
+    },
+    {
+      "path": "matlab/workflows/meg/meg_native_group_curves.m",
+      "bytes": 14271,
+      "sha256": "d84f22380b88a94489c323a2229fec9c2a6a887055a2b7dda18051fa64e1cfe2"
+    },
+    {
+      "path": "matlab/workflows/meg/meg_native_motif_metrics.m",
+      "bytes": 8938,
+      "sha256": "eed520340e74d942d0de5f1ea7c656a6bbc412a962d7d7485e6ceae1df95165e"
+    },
+    {
+      "path": "matlab/workflows/meg/meg_native_trial_curves.m",
+      "bytes": 20875,
+      "sha256": "98df8b267e3f7654662040ccebca0e078e556616ae9de9fae5c013b3ecb9a493"
+    },
+    {
+      "path": "matlab/workflows/meg/meg_subject_manifest.m",
+      "bytes": 378,
+      "sha256": "6fe2e3173c576369d900546082df4be7d276a0d317c535f38a706921bec1c17c"
+    },
+    {
+      "path": "matlab/workflows/meg/meg_velocity_derivatives.m",
+      "bytes": 2725,
+      "sha256": "aaa8190f73edc1cd4092749f11e936f3a78ad56ea08539ad0c9a3947201a242f"
+    },
+    {
+      "path": "matlab/workflows/rest/rest_config.m",
+      "bytes": 4023,
+      "sha256": "73ee378c0b8b8400d6959cd4efae38403969ee0fa3774460f7a88cf3e6a12727"
+    },
+    {
+      "path": "matlab/workflows/rest/rest_global_states.m",
+      "bytes": 9834,
+      "sha256": "78021ff4bad42c5569ea1b6144ff092d35f30528576ba7c3481ec261b1f397c5"
+    },
+    {
+      "path": "matlab/workflows/rest/rest_motif_densities.m",
+      "bytes": 11595,
+      "sha256": "17232e3ad7f0b89226a46016aad662ae10feae8d2e0251d59b6a0ede965f0619"
+    },
+    {
+      "path": "matlab/workflows/rest/rest_motif_metrics.m",
+      "bytes": 47633,
+      "sha256": "ce52dd7cd550ac784ca28f17d72eaf3a073583eec064cdcaa7116c915594d4bc"
+    },
+    {
+      "path": "matlab/workflows/rest/rest_principal_modes.m",
+      "bytes": 9753,
+      "sha256": "93bf056290dc99f0e9e1f168de18bd369aefd929718e7734cd09299f9830f06f"
+    },
+    {
+      "path": "matlab/workflows/rest/rest_surrogate_metrics.m",
+      "bytes": 21770,
+      "sha256": "ead96008d7ee4c54a24cd0b1c12aab035e465379bfc663ea41074cdea364e984"
+    },
+    {
+      "path": "matlab/workflows/rest/rest_surrogate_velocity.m",
+      "bytes": 4817,
+      "sha256": "9197856a7948ee7ba92bc63e91bb2af116a1a6a318e1e202347e0a92f1d092d9"
+    },
+    {
+      "path": "matlab/workflows/rnn/rnn_hidden_metrics.m",
+      "bytes": 9570,
+      "sha256": "acdc21a08defb5dee0d037564cf904d40b36834f48c5491dbc36833e55db36cc"
+    },
+    {
+      "path": "matlab/workflows/rnn/rnn_perturbation_sweep.m",
+      "bytes": 19867,
+      "sha256": "28d58d43fb4efcdf72227b45cb973775dc54e895fe94facde4e26922de723a85"
+    },
+    {
+      "path": "matlab/workflows/simulations/simulate_wavefields.m",
+      "bytes": 4204,
+      "sha256": "0716e6e6a24d9739af39c277018d48b6f1ca9aa806e2a03af8654bf527d2cd0e"
+    },
+    {
+      "path": "python/rnn/__init__.py",
+      "bytes": 60,
+      "sha256": "9993f90d6bf43e0f03f7d676e9314b234b639af2cbc099551aa2a03ed9efd8db"
+    },
+    {
+      "path": "python/rnn/rnn_perturbation_summary.py",
+      "bytes": 3888,
+      "sha256": "3f708bde7fd33bfa53af39728b852c34f30cabd2431a365f991f2332774d9b37"
+    },
+    {
+      "path": "python/rnn/rnn_scaling.py",
+      "bytes": 3693,
+      "sha256": "2dbf3d9730fa60201ae7c73fcf4f59c83703209fd0a8b41b1f90eaa84d9ec193"
+    },
+    {
+      "path": "python/rnn/train_working_memory.py",
+      "bytes": 16245,
+      "sha256": "9de792b7cf3afc9ca118e7055034922fe52f2ac4278b0b94c9186efff01d16c6"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4020,
+      "sha256": "12de2832c974134ddfd891dedf18aa4f372f50b804535171dbc2d8a5047ca538"
+    },
+    {
+      "path": "requirements-rnn.txt",
+      "bytes": 56,
+      "sha256": "46dee8914dd01d02cb6ffe14c2e27ff1e34e83387f7ab35c4e27a9e85d966727"
+    },
+    {
+      "path": "requirements-test.txt",
+      "bytes": 30,
+      "sha256": "d1f7a9a74d4999930cf88eba1fefc834281a91cbd10efb799ba3f72767e9c5b9"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 59,
+      "sha256": "a0dc4eb90cd1b94a92f4b164f0773b07a1ce8176173f2e11860bccfcf1cc0dca"
+    },
+    {
+      "path": "setup.m",
+      "bytes": 1115,
+      "sha256": "358c46053baae2d6bf9dc3346811b7bf3f804a9ce4dc8d4e3aba6ec47703f464"
+    },
+    {
+      "path": "tests/matlab/test_clinical_inputs.m",
+      "bytes": 5190,
+      "sha256": "ff6bdd842eb1610a9be3d12d9a0b95645ad9702ca45503798246e28870491f8a"
+    },
+    {
+      "path": "tests/matlab/test_core_clinical.m",
+      "bytes": 3258,
+      "sha256": "7c8ee9093135c8bdec8d120fbaea6c5f487aa4a11d821d6d4c87c74945f32d8d"
+    },
+    {
+      "path": "tests/python/test_estimators.py",
+      "bytes": 15307,
+      "sha256": "6d670515701701cc0796d4bf094a1c9284aef574b1eef9c346b88353ada3b600"
+    },
+    {
+      "path": "tests/python/test_workflows.py",
+      "bytes": 23413,
+      "sha256": "eacab41418cf1de74ec8452387cd426d6ac39616f46f78fe852418735b943a39"
+    },
+    {
+      "path": "third_party/cifti_matlab/@gifti/Contents.m",
+      "bytes": 1593,
+      "sha256": "7e21d592f5eaa077572ebf5cc1156d05711399ae8405997ebe20c5ad8cb00bc1"
+    },
+    {
+      "path": "third_party/cifti_matlab/@gifti/display.m",
+      "bytes": 679,
+      "sha256": "7448693504121606736ae4c679df9a79e48f35125ce16abd94c4d5dc4234694c"
+    },
+    {
+      "path": "third_party/cifti_matlab/@gifti/export.m",
+      "bytes": 1773,
+      "sha256": "1e1c66340c5efc857113f3ebc8a7e7879b4aa99457a6afc7c479429330b23dbe"
+    },
+    {
+      "path": "third_party/cifti_matlab/@gifti/fieldnames.m",
+      "bytes": 553,
+      "sha256": "979fef23e1b8136181d177e9240a01a05a8a69fb229be027a4926786e3bf6aca"
+    },
+    {
+      "path": "third_party/cifti_matlab/@gifti/gifti.m",
+      "bytes": 3807,
+      "sha256": "a7e30cdc9679849a409f9b09b2636d32c483a948c012e17cdd0ec054fe26b1c2"
+    },
+    {
+      "path": "third_party/cifti_matlab/@gifti/isfield.m",
+      "bytes": 440,
+      "sha256": "4e67933a24c1355e53f9bd08fad5d18c0c4e1ce4087d83a2a250984b7def3968"
+    },
+    {
+      "path": "third_party/cifti_matlab/@gifti/plot.m",
+      "bytes": 1423,
+      "sha256": "daca35a35f9bbda93ab7de0b7ec236b1527ea6b7041a27d6922e0e8da03b0f3d"
+    },
+    {
+      "path": "third_party/cifti_matlab/@gifti/private/base64decode.m",
+      "bytes": 2977,
+      "sha256": "775bd8667cb258c8088a09bfbc45f2a11800c578d5c5afcbac7cd19a7a66d2ac"
+    },
+    {
+      "path": "third_party/cifti_matlab/@gifti/private/base64encode.m",
+      "bytes": 5161,
+      "sha256": "abea870acd7d06ffce225456ea2b4111c409412d7921e6cf6c0a57366a3ac24c"
+    },
+    {
+      "path": "third_party/cifti_matlab/@gifti/private/getdict.m",
+      "bytes": 733,
+      "sha256": "e83600bdc8fc11167417aabf8394cba4a6ba76aa6af5bb3aadb21473dd15b269"
+    },
+    {
+      "path": "third_party/cifti_matlab/@gifti/private/isintent.m",
+      "bytes": 2687,
+      "sha256": "00197b7f1d15e94dd0f3b6fb836c18226bf2be2e8e9562454e289b66195b6d91"
+    },
+    {
+      "path": "third_party/cifti_matlab/@gifti/private/Makefile",
+      "bytes": 500,
+      "sha256": "e6cb5b5a6c561fff999197dd87d3dbd3138ecf69fde6ce7b50778751c3a82436"
+    },
+    {
+      "path": "third_party/cifti_matlab/@gifti/private/Makefile.var",
+      "bytes": 3090,
+      "sha256": "7973bad180bc1f479bd90c6b16cd49d91e370779c47ed82ddd8a202bb4c84c9b"
+    },
+    {
+      "path": "third_party/cifti_matlab/@gifti/private/miniz.c",
+      "bytes": 225892,
+      "sha256": "6f29f1bf4fbe2d81a86438450ac91b2990cf7020d0f6555694c84dd0479a3c4c"
+    },
+    {
+      "path": "third_party/cifti_matlab/@gifti/private/mvtk_write.m",
+      "bytes": 18318,
+      "sha256": "55b57dbba1aa7e9894dd5b13ed8c21f21cf9661fae5308fffb07d1226fbd850b"
+    },
+    {
+      "path": "third_party/cifti_matlab/@gifti/private/read_freesurfer_file.m",
+      "bytes": 817,
+      "sha256": "d5ee7fcbcc0e61a54305106e62e919a49c7e14c436ce9f6efd667dca706ed0e7"
+    },
+    {
+      "path": "third_party/cifti_matlab/@gifti/private/read_gifti_file_standalone.m",
+      "bytes": 8008,
+      "sha256": "bda4156d4a8647aafc2da32cf1846356a517cb3172cdad8b9df1336dc38c8a17"
+    },
+    {
+      "path": "third_party/cifti_matlab/@gifti/private/xml_findstr.m",
+      "bytes": 1899,
+      "sha256": "10c60ccd76431b7ea66ec22e9b452f2b3f8621682d38f48181dc9941c670d7ad"
+    },
+    {
+      "path": "third_party/cifti_matlab/@gifti/private/xml_parser.m",
+      "bytes": 16486,
+      "sha256": "9e4567af8a929f57945722f7fe81ee4603193c36350fc6631dec9ebde1157e59"
+    },
+    {
+      "path": "third_party/cifti_matlab/@gifti/private/zstream.c",
+      "bytes": 1944,
+      "sha256": "83c0f42e27b13cfa85d49c420db7e0c3e4f066d4fd5d2ec52f8410f94f2eebd4"
+    },
+    {
+      "path": "third_party/cifti_matlab/@gifti/private/zstream.m",
+      "bytes": 1697,
+      "sha256": "88bef8f8a88da6865d230d51a8d510668e9bace60990640c61c832aaf27d5274"
+    },
+    {
+      "path": "third_party/cifti_matlab/@gifti/save.m",
+      "bytes": 9548,
+      "sha256": "f329781cc90eb10bdd33eb9503649e42e719b2adc9d931cf41a33fdb46012ad7"
+    },
+    {
+      "path": "third_party/cifti_matlab/@gifti/saveas.m",
+      "bytes": 13365,
+      "sha256": "dfd02efc2f6a5808819b2ba67ed0df8e86254caaea653199e1a52afb84419b17"
+    },
+    {
+      "path": "third_party/cifti_matlab/@gifti/struct.m",
+      "bytes": 603,
+      "sha256": "c9b96ba679e37a1d0b24cbc58c26a8e593a4a3deaddf7b0fc8791a02b8878058"
+    },
+    {
+      "path": "third_party/cifti_matlab/@gifti/subsasgn.m",
+      "bytes": 6000,
+      "sha256": "0094be4de8d5057012631f314bee8c4100f63f482ca545db49fa74a8147b24e9"
+    },
+    {
+      "path": "third_party/cifti_matlab/@gifti/subsref.m",
+      "bytes": 2010,
+      "sha256": "2e60d0f063b7c39b059534674852149bff08aef075637e9798ebe677551bff5e"
+    },
+    {
+      "path": "third_party/cifti_matlab/@xmltree/add.m",
+      "bytes": 3637,
+      "sha256": "04a105c7ffb981ce322544c7dfa48c15ca9710fcc9586982b9a0ce164df5d5a3"
+    },
+    {
+      "path": "third_party/cifti_matlab/@xmltree/attributes.m",
+      "bytes": 4272,
+      "sha256": "54c7e3b35d628a5ae648d6b3b1342fa39c943504998897daff4ba158e702507b"
+    },
+    {
+      "path": "third_party/cifti_matlab/@xmltree/branch.m",
+      "bytes": 1750,
+      "sha256": "59c70f99fecfad24f73ea577d3106e8ef65523c3fc5457a8fcee2279c71e30be"
+    },
+    {
+      "path": "third_party/cifti_matlab/@xmltree/char.m",
+      "bytes": 653,
+      "sha256": "a49f05150d70208f5e5f08e675ada6f44eda0a597b32ecb5b7272d2436bfbd43"
+    },
+    {
+      "path": "third_party/cifti_matlab/@xmltree/children.m",
+      "bytes": 895,
+      "sha256": "25a86df55eaa17f34511380dc7e9562ef5b9ac6fccaf6e5f150c6d4aee986b2e"
+    },
+    {
+      "path": "third_party/cifti_matlab/@xmltree/Contents.m",
+      "bytes": 1832,
+      "sha256": "26b54a3d8304b4711912123f7f95ae3dd16d9295c1818a489e4f005faf9d46f4"
+    },
+    {
+      "path": "third_party/cifti_matlab/@xmltree/convert.m",
+      "bytes": 5573,
+      "sha256": "3c9cca0e6ea2354d9b683583fbab9cc04b84c2af072e753c521d5cf92e1ae102"
+    },
+    {
+      "path": "third_party/cifti_matlab/@xmltree/copy.m",
+      "bytes": 1634,
+      "sha256": "2aa06511422792f9e8dce718f7f3fb792d50766dc38a30a1cda6d03aad249845"
+    },
+    {
+      "path": "third_party/cifti_matlab/@xmltree/delete.m",
+      "bytes": 1189,
+      "sha256": "710190ad0672ff834475955c26383cdf19162acb1aea571c9985b20c437102e8"
+    },
+    {
+      "path": "third_party/cifti_matlab/@xmltree/display.m",
+      "bytes": 661,
+      "sha256": "05524df0c48d00db7d9878056ae9fd6ac43e92c2a37f3b4175cf819fa7bf610b"
+    },
+    {
+      "path": "third_party/cifti_matlab/@xmltree/editor.m",
+      "bytes": 12418,
+      "sha256": "38ff5ecca84dbdc2f8175803bd10a05f056963087c9bd9313373bf071d3e43d9"
+    },
+    {
+      "path": "third_party/cifti_matlab/@xmltree/find.m",
+      "bytes": 5901,
+      "sha256": "2334babbcc939d81053d6ace0a77352ad467bd5389418ea379af52d680eab3c3"
+    },
+    {
+      "path": "third_party/cifti_matlab/@xmltree/flush.m",
+      "bytes": 1413,
+      "sha256": "ce8800a19f7e56774921305335c7f24c6a0e96386ad171ab4aa3b9b03a4dce57"
+    },
+    {
+      "path": "third_party/cifti_matlab/@xmltree/get.m",
+      "bytes": 1227,
+      "sha256": "dcc77a37ffb7be64b356187758a25c469bb5f9a3791a6f9411d3f1b304bfe12b"
+    },
+    {
+      "path": "third_party/cifti_matlab/@xmltree/getfilename.m",
+      "bytes": 579,
+      "sha256": "53534e3d3c221d2eef63bbe57b6701261c78547f58a2599a6a6c98340974c115"
+    },
+    {
+      "path": "third_party/cifti_matlab/@xmltree/isfield.m",
+      "bytes": 742,
+      "sha256": "6cfcaf508fd2e6925bd09d11542820b2b9e4272f97a24809fe1ceff5d679fe42"
+    },
+    {
+      "path": "third_party/cifti_matlab/@xmltree/length.m",
+      "bytes": 1046,
+      "sha256": "06ea73968fc2505db34bb38636cc8849b81dffd1b5dcd6e226b03d1fa4516ef3"
+    },
+    {
+      "path": "third_party/cifti_matlab/@xmltree/move.m",
+      "bytes": 786,
+      "sha256": "83cf6e5f447fcb463313b06de38387eb20ed5230b2e571cb75de7d0f718575cd"
+    },
+    {
+      "path": "third_party/cifti_matlab/@xmltree/parent.m",
+      "bytes": 562,
+      "sha256": "87f7fdb70ad2976aafc5c3a733e6ef1b3cb36cc6fb57b08c78c860d524c13cfd"
+    },
+    {
+      "path": "third_party/cifti_matlab/@xmltree/private/xml_findstr.c",
+      "bytes": 3546,
+      "sha256": "37a54bc453a7aea80e0e409db004804c4fdd59bc8d42ce99df7ed7974f2d0e27"
+    },
+    {
+      "path": "third_party/cifti_matlab/@xmltree/private/xml_findstr.m",
+      "bytes": 1899,
+      "sha256": "10c60ccd76431b7ea66ec22e9b452f2b3f8621682d38f48181dc9941c670d7ad"
+    },
+    {
+      "path": "third_party/cifti_matlab/@xmltree/private/xml_parser.m",
+      "bytes": 16192,
+      "sha256": "6764850a75f5265cea4ab25fbc1ec705a93c666f928ccbf96960081aed92b77c"
+    },
+    {
+      "path": "third_party/cifti_matlab/@xmltree/root.m",
+      "bytes": 1187,
+      "sha256": "ea03ea23278757a73c359a67f7a762e5c4b0e348f969749b436aa19a673a4c7a"
+    },
+    {
+      "path": "third_party/cifti_matlab/@xmltree/save.m",
+      "bytes": 5114,
+      "sha256": "34ba92a01a99d33c41b2d3381dedbd618a5a02ebfaaca17e8b0172ea8db104ab"
+    },
+    {
+      "path": "third_party/cifti_matlab/@xmltree/set.m",
+      "bytes": 950,
+      "sha256": "8c6f137d61f97f00d4e9648e16ec0a7de605776a573c8910613bac4522a79743"
+    },
+    {
+      "path": "third_party/cifti_matlab/@xmltree/setfilename.m",
+      "bytes": 552,
+      "sha256": "a2607e36e04171056d4dfd9e02c55a19a5979ed373a94c6726bfc14810e9d27e"
+    },
+    {
+      "path": "third_party/cifti_matlab/@xmltree/xmltree.m",
+      "bytes": 2375,
+      "sha256": "b0b7c78e0024edc8f90dd54e6476421732f80e8dafae3b497651f89692e06f34"
+    },
+    {
+      "path": "third_party/cifti_matlab/cpm_check_private_helpers.m",
+      "bytes": 855,
+      "sha256": "193e5920ff135176e1f50a64e640f0969dffbbebb4c48dbbe79740e154e5734e"
+    },
+    {
+      "path": "third_party/cifti_matlab/ft_read_cifti.m",
+      "bytes": 40305,
+      "sha256": "cbff4fe5964a9820b2765818f6ec9fbad5e7e9b5e7150690f35b96b6909df7ba"
+    },
+    {
+      "path": "third_party/cifti_matlab/ft_write_cifti.m",
+      "bytes": 31321,
+      "sha256": "95f3706eb1e1a19799676477a6acee71a26da0f13411b7363ad7eb20fced2d7c"
+    },
+    {
+      "path": "third_party/cifti_matlab/GPL",
+      "bytes": 17988,
+      "sha256": "667d4c214e0d0b49c8cb87731625de89723ccb548316d3a131a352fbdf7ba060"
+    },
+    {
+      "path": "third_party/cifti_matlab/GPL-3.0.txt",
+      "bytes": 35150,
+      "sha256": "e57f1c320b8cf8798a7d2ff83a6f9e06a33a03585f6e065fea97f1d86db84052"
+    },
+    {
+      "path": "third_party/cifti_matlab/LICENSE.fieldtrip",
+      "bytes": 788,
+      "sha256": "494370d1a74db1b13978053d493209d9b3a35fe00300bb21fef520f0c0489564"
+    },
+    {
+      "path": "third_party/cifti_matlab/LICENSE.gifti",
+      "bytes": 767,
+      "sha256": "4a79a9991bca6483c227e6eac385b4d9e827c0d673cc17808a35e2f6b9f658b1"
+    },
+    {
+      "path": "third_party/cifti_matlab/LICENSE.xmltree",
+      "bytes": 767,
+      "sha256": "72dac502d5f3eab4935a1983f169235a00568496f18f7d925ca6dc53cfc599c7"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/copyfields.m",
+      "bytes": 1631,
+      "sha256": "261be14a5b8ea3586ebafe231ef717b2ef4f23dcd267ec4f2911c7fce03ef3d1"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/fetch_url.m",
+      "bytes": 1837,
+      "sha256": "4c632e8216cf6659d21df68e8182878ca883e6d2de9e09bc6f877fb9679ce839"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/filetype_check_extension.m",
+      "bytes": 2076,
+      "sha256": "21c9d17a208204a1957d22782ca4d077dc802b227b88d038593045e78ed4a412"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/filetype_check_header.m",
+      "bytes": 3022,
+      "sha256": "c5fa853c8bb4bf6df1b369ebb4f5d7256b1bc2adc8e1988709e8b072364a0e9d"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/filetype_check_uri.m",
+      "bytes": 9030,
+      "sha256": "e06fa2e5dda67063a2c6d7869b77de5585773d8b6f8279f0ea67fc4c29361ac7"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/find_outermost_boundary.m",
+      "bytes": 1786,
+      "sha256": "d5b3f5123d48d702139501638e4b141e9ad81129776386bff98ef52f5d562fd5"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/fixname.m",
+      "bytes": 1993,
+      "sha256": "899b32c5c7aff18815c377cccb0825029ac7ce740ccf642e28506c2cdd1e16ed"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/fixpos.m",
+      "bytes": 1945,
+      "sha256": "3ef456aa9fe8223b9ba752bee67c815dadf1240a04eab3984fd40f672daaff20"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/ft_convert_units.m",
+      "bytes": 9813,
+      "sha256": "f40be3617d5fdfa1bd47ce5d532aa5a9d35d3a0cd11846ec79ddc28936ca5670"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/ft_datatype.m",
+      "bytes": 10043,
+      "sha256": "ae2d830188260d9b7a259587a812c51e582e666abf3d28faa82d1efcfa05d3ba"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/ft_datatype_sens.m",
+      "bytes": 20583,
+      "sha256": "87aaecf901995369ce7bad190443f3fd45fc8eac96668e8c6cf00bba0ed69741"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/ft_estimate_units.m",
+      "bytes": 2013,
+      "sha256": "1c06dbcc93c34e0f549255f784ad1d66d0ecc9d0330e3a4a65e586e8d097fab3"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/ft_filetype.m",
+      "bytes": 65743,
+      "sha256": "b03e015758b8d7a1fdb3a24a50796257100f3e4072f32410f4c98a0e53654d97"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/ft_getopt.m",
+      "bytes": 3426,
+      "sha256": "7d71f501fe405d79a9060696bb95f65fa9bda82fd5433aecaff63f6f32a1eb45"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/ft_hastoolbox.m",
+      "bytes": 26685,
+      "sha256": "ffd50aa9a1a34b27815c7b75d924a42111783ac7a3f2dd8c74aa972c49434633"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/ft_read_header.m",
+      "bytes": 92382,
+      "sha256": "fc6a374462895b39816edfb12ec79a6eae57ab21a3f5c1623e843c4e605485ea"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/ft_read_headshape.m",
+      "bytes": 35310,
+      "sha256": "7b613852cc0fa9b01a946c3f10fb329cbf0d093b51f3970e799a4505db67549a"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/ft_read_mri.m",
+      "bytes": 16000,
+      "sha256": "6d07e646176df4befb95c170efa22d5766d3fae900e5b88458652dfe38527115"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/ft_read_sens.m",
+      "bytes": 14598,
+      "sha256": "77f10a3918598cfeeb0a8f7c0e0dcfc6f28df01666baa0cd2f6e05f893602628"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/ft_read_vol.m",
+      "bytes": 2293,
+      "sha256": "2e5aca268a3cbc1faae56a40ecec3027d8e7a508a359dd43f0cd22738fd2c1f5"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/ft_scalingfactor.m",
+      "bytes": 9049,
+      "sha256": "0422c80cfd683b898763ecbfcd91818f061d66a497523890eab2117df4c70508"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/ft_senstype.m",
+      "bytes": 17839,
+      "sha256": "d28b78d73f481bd3f61d80d3cf98bf0dc471d6c876d7b93669ccf8ce6d591a43"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/ft_struct2double.m",
+      "bytes": 2812,
+      "sha256": "c77e6d3cfc1fec4ee0b5885e5cdd5c46c86ab1b5aaacd43787f62027e5f4d437"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/ft_voltype.m",
+      "bytes": 5612,
+      "sha256": "2c765a2c60f362714cc0e78ef370621cd8bad50c7017f47027dbfe1e38610f78"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/ft_warning.m",
+      "bytes": 7789,
+      "sha256": "4aac20c92a8c8958cf46ca32d5ca40beceb7ad5f5f6e6d2ddfe37683f0064358"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/ft_warp_apply.m",
+      "bytes": 13792,
+      "sha256": "6073fde5ff132c65bc5f28f4f7635436728c6c6a2a1bf876fa9cd111f34e97ce"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/ft_write_headshape.m",
+      "bytes": 7610,
+      "sha256": "44c0bd61541a2d5d5a1364b2141eff38672ffcebb6d65c50f7a8b34a2bc3d79f"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/getdimord.m",
+      "bytes": 19986,
+      "sha256": "9857494bef7584787071a19b787c9642acbfde8608d8b71ac5fed78c49d07695"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/getdimsiz.m",
+      "bytes": 2235,
+      "sha256": "10b7c80839d936492bf3e7fb37aceb196ead10cfb698258243511ea0c35aa5ff"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/getsubfield.m",
+      "bytes": 1397,
+      "sha256": "28622a46638f39ffa76ad1dabd493641b7cb433704d8dbfc92ee560fd904ff17"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/hasyokogawa.m",
+      "bytes": 3930,
+      "sha256": "8bfe122592f8ebbde2f171af40f1f7a000bd7dc7472503dc439dbd74e91a39b3"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/individual2sn.m",
+      "bytes": 4944,
+      "sha256": "bd8f696690b7e01fe20a2d0086f397e64ded5b28b36d39fa5ab8f863fd2f1fc6"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/inflate_file.m",
+      "bytes": 2854,
+      "sha256": "19be9811fa90ae9886ba92ad373535f48b1a588ef1f58591b801103d23e847d5"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/issubfield.m",
+      "bytes": 1734,
+      "sha256": "d70ea7057110411878680118bfbf27861a31713decdb40eb943cf6e59f3062a4"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/istrue.m",
+      "bytes": 1351,
+      "sha256": "ad034ef84a70a5572485f40b4baa167bb64bdd1174f6be7c54302f1ced3785ed"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/keepfields.m",
+      "bytes": 1331,
+      "sha256": "1d4a344a8494592f146f830c2baec638055ab5546ee872adaedf006c033d8bb4"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/ndgrid.m",
+      "bytes": 4253,
+      "sha256": "c2c65469160faff9225ea5c176cd3b674c92e421d03158fd1b2a24966c35215d"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/pos2transform.m",
+      "bytes": 801,
+      "sha256": "2d1b81baf6f9711852f557c0dcaa0a067e8f100ec621808394ae5995054af397"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/read_asa.m",
+      "bytes": 3803,
+      "sha256": "841b700bf7d192b5b824c7d67b1a1964bc3451ebba24ee0d4a150eb53f26b4fc"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/read_besa_sfp.m",
+      "bytes": 989,
+      "sha256": "4546a24f5f494bc2e1086b39cbddf7c7d41d076cebe1dc0b06a66d1cef55676d"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/read_bti_hs.m",
+      "bytes": 1730,
+      "sha256": "577c3789e2d554aecbe1d773475471014db92329430a3f4891d6e98afc3020e1"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/read_bv_srf.m",
+      "bytes": 5723,
+      "sha256": "bd401a81147ce51a5ad02d7c3bcfe26e8f5c51d2e6bc1521f02ac97d43688a41"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/read_caret_spec.m",
+      "bytes": 2677,
+      "sha256": "ad1c43710d6633d01e7755b24dfafa41746c802f5142bfa349b23ec199fa383e"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/read_ctf_hc.m",
+      "bytes": 8342,
+      "sha256": "a219aed71dc8b9fc391fdbe0002d2974bcfdd971955e4f85c5ebb7a1ffc3948c"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/read_ctf_pos.m",
+      "bytes": 1744,
+      "sha256": "102e6e843b440337f8c265699fff46bfade46c30dcf2355e8286e8ded40ffede"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/read_ctf_shape.m",
+      "bytes": 1390,
+      "sha256": "2491b0a3895ab3fbe525db6841ffccd277e5cf9d409e737fdfd9f69a9240e736"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/read_neuromag_hc.m",
+      "bytes": 5696,
+      "sha256": "c628bbbeeb246b148fc02091b400f3075db10e3213c21ce982e07f8163abfb2e"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/read_nifti2_hdr.m",
+      "bytes": 5406,
+      "sha256": "17abb7496498d29c2b176de8a0478ccaf72785bd7714e6d0dce3f25e1152b37d"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/read_off.m",
+      "bytes": 1541,
+      "sha256": "a80804b280086e85027a6b2109da113f3ce67d2ad4fcb921a0816ec2ad9b3be5"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/read_ply.m",
+      "bytes": 5940,
+      "sha256": "1e7072be5094f062b3a3bf15c0ef185873da1355e40bed7b5a246001c1b37341"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/read_polhemus_fil.m",
+      "bytes": 3292,
+      "sha256": "ac41e41664777d8a4c7489d9914cffe6402a2222c31942e67749e1a332d01cc3"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/read_stl.m",
+      "bytes": 4432,
+      "sha256": "13657461e105b55bcacb4356d6592ab0fce2d93c115fc36549b978bbf0f72c1c"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/read_vtk.m",
+      "bytes": 881,
+      "sha256": "daef80fffa3dd21b5b14ca522595e31faabcd476905c114eb86c67801e82017f"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/read_yokogawa_header.m",
+      "bytes": 8274,
+      "sha256": "be391fbc4337dc59fd24f61355d9b663fc21c896d180cb5620499dec817f4f61"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/read_yokogawa_header_new.m",
+      "bytes": 8889,
+      "sha256": "895e6abc2f59df70a76e50abc36c25b1858593f26a189d3c75f8bf2554af9e02"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/refine.m",
+      "bytes": 6468,
+      "sha256": "05bfcf54aed01fa5e89884333426a9428c57e39fb48228d04bed105f0777aa0a"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/removefields.m",
+      "bytes": 1337,
+      "sha256": "3894cb6af17eda30189b62d21ea6c7f6a7e54823fb20537aa75467c2d879efe2"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/renamefields.m",
+      "bytes": 1658,
+      "sha256": "da0a7db4bf65573380395a02420719db6f0c47cc29e2de1d4da50fb139126de4"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/setsubfield.m",
+      "bytes": 1664,
+      "sha256": "50b3454b65e7a2af3ac11af8f5f5876ea3aeaf81d62e8070c47f9f553e7097f5"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/sn2individual.m",
+      "bytes": 2322,
+      "sha256": "0d37763fbf6df8ad53d48070d6280a28ef86ef00ab21d4b5423aeaecfac3bc96"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/surf_to_tetgen.m",
+      "bytes": 1826,
+      "sha256": "68c03f5d4880093e5d2c447298c7ee5c19605b48a7a8a8e86130b2dcedddfe1e"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/tokenize.m",
+      "bytes": 2506,
+      "sha256": "3bb4360dee94ce2ac87b9bdfd45380c59076a0e96a68e8d34fde0fd442158d63"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/write_nifti2_hdr.m",
+      "bytes": 4094,
+      "sha256": "c4860f0000c0d26ad5cf2694a28a84e95a2bc9fa8d6ae8e26a91f664268892c9"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/write_off.m",
+      "bytes": 1708,
+      "sha256": "a862eb4ac9219b74ea10626b98da73f89005222a987f8c44e7bd4c987a5bcdef"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/write_ply.m",
+      "bytes": 2922,
+      "sha256": "abff123e89524ea528ebe3e1e167d70abb775919135aa7fb60ee29914878c82f"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/write_stl.m",
+      "bytes": 1944,
+      "sha256": "d358afc0c7cb840e1d3db15f00621a1c5dce2b4f72fcba0dfe313166b8c3967c"
+    },
+    {
+      "path": "third_party/cifti_matlab/private/write_vtk.m",
+      "bytes": 1330,
+      "sha256": "654a3cdc632aae15136e6b3482d39052b3d16863eba77a39bf5d4bb38bf47f4b"
+    },
+    {
+      "path": "third_party/cifti_matlab/README.md",
+      "bytes": 1078,
+      "sha256": "4c2f0a54058f051f66e016bf8f52bd47886635824133dadad16bda7b3ed93894"
+    },
+    {
+      "path": "third_party/cifti_matlab/VERSION",
+      "bytes": 117,
+      "sha256": "0e92410aaf0471454de832e9e79f8b53e8122848a5b30b6b219db119883a4c18"
+    },
+    {
+      "path": "third_party/MANIFEST.json",
+      "bytes": 23093,
+      "sha256": "14a2d683d8e6ed101f032f7bda11bc90fb1aa2afb008b600f08cf5653e71725f"
+    },
+    {
+      "path": "third_party/nanconv/license.txt",
+      "bytes": 1314,
+      "sha256": "4384c5b817a8eed87dc0006b81c3151a563990817ddb7d317178eef04b66eeab"
+    },
+    {
+      "path": "third_party/nanconv/nanconv.m",
+      "bytes": 4647,
+      "sha256": "dd9488e8c9e868dcb261bccb3610cc12a3801a0271604c11346a7574ea7902e2"
+    },
+    {
+      "path": "third_party/raincloudplots/LICENSE",
+      "bytes": 1141,
+      "sha256": "55fe1c880e3f408af1ff9483ac4b14f26c0f45d0c0480a1007622580381f28dc"
+    },
+    {
+      "path": "third_party/raincloudplots/raincloud_plot.m",
+      "bytes": 6672,
+      "sha256": "b4a4b14f4efcef8045ef21e048a89c37b96b1abf7384c8a875ad4d1997eee716"
+    },
+    {
+      "path": "third_party/raincloudplots/rm_raincloud.m",
+      "bytes": 5920,
+      "sha256": "87390713d8e3d87812e2344dd6398ff49e49a7a6168b61a41f8320f1c4065cff"
+    },
+    {
+      "path": "third_party/README.md",
+      "bytes": 2733,
+      "sha256": "a74a2d723f17e667c3fa91452167814d58042c5dd3bc341fa07722d87f387900"
+    },
+    {
+      "path": "tools/check_dependencies.m",
+      "bytes": 4781,
+      "sha256": "ec8baacdd96c3768af93ca5f763df550f07a1a72b39e4a8cecbd17f0a74ba866"
+    },
+    {
+      "path": "tools/check_matlab_source.m",
+      "bytes": 1230,
+      "sha256": "4d500ef1be4e7e0d5c4dfb0f115e69a45b16b414cd3890198858a704b4deaf9e"
+    },
+    {
+      "path": "tools/check_source.py",
+      "bytes": 4003,
+      "sha256": "ab7759a72a65a5193932077e25bc90a54a1dffad1eec205ae73b9f5f62ac64d4"
+    }
+  ]
+}
